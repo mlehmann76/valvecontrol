@@ -523,28 +523,6 @@ F 3 "" H 7700 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L opto:PC827 U5
-U 1 1 571AB759
-P 1600 3400
-F 0 "U5" H 1400 3600 50  0000 L CNN
-F 1 "MOCD207M" H 1600 3600 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1400 3200 50  0001 L CIN
-F 3 "" H 1600 3400 50  0000 L CNN
-	1    1600 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L opto:PC827 U5
-U 2 1 571AC18A
-P 1600 4050
-F 0 "U5" H 1400 4250 50  0000 L CNN
-F 1 "MOCD207M" H 1600 4250 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1400 3850 50  0001 L CIN
-F 3 "" H 1600 4050 50  0000 L CNN
-	2    1600 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:R R32
 U 1 1 571AEE8B
 P 6400 1350
@@ -949,8 +927,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 800  7900 800 
 Wire Wire Line
-	2000 3950 2100 3950
-Wire Wire Line
 	8050 1550 8050 1900
 $Comp
 L aqy212:AQY212 U2
@@ -977,8 +953,6 @@ Text Label 1950 1250 0    60   ~ 0
 Vin
 Wire Wire Line
 	1900 3300 2000 3300
-Wire Wire Line
-	2000 3300 2100 3300
 Connection ~ 2000 3300
 $Comp
 L device:R R1
@@ -1471,28 +1445,6 @@ F 3 "" H 6700 1150 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	6150 1150 6700 1150
-$Comp
-L opto:PC827 U8
-U 1 1 5B81A865
-P 1600 5000
-F 0 "U8" H 1400 5200 50  0000 L CNN
-F 1 "MOCD207M" H 1600 5200 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1400 4800 50  0001 L CIN
-F 3 "" H 1600 5000 50  0000 L CNN
-	1    1600 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L opto:PC827 U8
-U 2 1 5B81A86B
-P 1600 5650
-F 0 "U8" H 1400 5850 50  0000 L CNN
-F 1 "MOCD207M" H 1600 5850 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 1400 5450 50  0001 L CIN
-F 3 "" H 1600 5650 50  0000 L CNN
-	2    1600 5650
-	1    0    0    -1  
-$EndComp
 Text Label 550  4900 0    60   ~ 0
 IN3
 Text Label 550  5550 0    60   ~ 0
@@ -1571,11 +1523,7 @@ Wire Wire Line
 	1900 5550 2000 5550
 Connection ~ 2000 5550
 Wire Wire Line
-	2000 5550 2100 5550
-Wire Wire Line
 	1900 4900 2000 4900
-Wire Wire Line
-	2000 4900 2100 4900
 Connection ~ 2000 4900
 $Comp
 L device:R R3
@@ -1718,4 +1666,72 @@ Text Label 6050 4550 0    60   ~ 0
 CH3
 Text Label 6050 4450 0    60   ~ 0
 CH4
+$Comp
+L Isolator:LTV-354T U5
+U 1 1 5B84B6D3
+P 1600 3400
+F 0 "U5" H 1600 3725 50  0000 C CNN
+F 1 "LTV-354T" H 1600 3634 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 3200 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 3400 50  0001 L CNN
+	1    1600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-354T U8
+U 1 1 5B84BAAD
+P 1600 4050
+F 0 "U8" H 1600 4375 50  0000 C CNN
+F 1 "LTV-354T" H 1600 4284 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 3850 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 4050 50  0001 L CNN
+	1    1600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-354T U9
+U 1 1 5B84BB59
+P 1600 5000
+F 0 "U9" H 1600 5325 50  0000 C CNN
+F 1 "LTV-354T" H 1600 5234 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 4800 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 5000 50  0001 L CNN
+	1    1600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-354T U10
+U 1 1 5B84BC17
+P 1600 5650
+F 0 "U10" H 1600 5975 50  0000 C CNN
+F 1 "LTV-354T" H 1600 5884 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 5450 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 5650 50  0001 L CNN
+	1    1600 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4300 2800 4300
+Wire Wire Line
+	2800 4300 2800 5550
+Wire Wire Line
+	2000 5550 2800 5550
+Wire Wire Line
+	2900 4900 2900 4400
+Wire Wire Line
+	2900 4400 4100 4400
+Wire Wire Line
+	2000 4900 2900 4900
+Wire Wire Line
+	4100 5000 3000 5000
+Wire Wire Line
+	3000 5000 3000 3950
+Wire Wire Line
+	2000 3950 3000 3950
+Wire Wire Line
+	4100 5100 3100 5100
+Wire Wire Line
+	3100 5100 3100 3300
+Wire Wire Line
+	2000 3300 3100 3300
 $EndSCHEMATC
