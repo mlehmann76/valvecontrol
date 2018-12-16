@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -26,7 +26,7 @@ F 3 "" H 9450 5850 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:R R11
+L esp32ValveControl-rescue:R-device R11
 U 1 1 55A6DADB
 P 9650 6050
 F 0 "R11" V 9730 6050 50  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 9650 6050 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C23
+L esp32ValveControl-rescue:C_Small-device C23
 U 1 1 55A6DCA5
 P 9250 6000
 F 0 "C23" H 9260 6070 50  0000 L CNN
@@ -48,7 +48,7 @@ F 3 "" H 9250 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR022
+L esp32ValveControl-rescue:GND-power #PWR022
 U 1 1 55A6DDB1
 P 9250 6100
 F 0 "#PWR022" H 9250 5850 50  0001 C CNN
@@ -59,7 +59,7 @@ F 3 "" H 9250 6100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR023
+L esp32ValveControl-rescue:GND-power #PWR023
 U 1 1 55A6E003
 P 9650 6200
 F 0 "#PWR023" H 9650 5950 50  0001 C CNN
@@ -72,7 +72,7 @@ $EndComp
 Text Label 8650 5900 0    60   ~ 0
 nReset
 $Comp
-L device:R R10
+L esp32ValveControl-rescue:R-device R10
 U 1 1 568D341F
 P 9100 5650
 F 0 "R10" V 9180 5650 50  0000 C CNN
@@ -83,7 +83,7 @@ F 3 "" H 9100 5650 30  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR030
+L esp32ValveControl-rescue:+3.3V-power #PWR030
 U 1 1 568D47D8
 P 9100 5450
 F 0 "#PWR030" H 9100 5300 50  0001 C CNN
@@ -94,7 +94,7 @@ F 3 "" H 9100 5450 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L regul:MC34063 U4
+L esp32ValveControl-rescue:MC34063-regul U4
 U 1 1 57199796
 P 8900 2050
 F 0 "U4" H 9050 2400 60  0000 L CNN
@@ -105,7 +105,7 @@ F 3 "" H 8900 2050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R12
+L esp32ValveControl-rescue:R-device R12
 U 1 1 5719AD89
 P 8200 1550
 F 0 "R12" V 8280 1550 50  0000 C CNN
@@ -116,7 +116,7 @@ F 3 "" H 8200 1550 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C_Small C24
+L esp32ValveControl-rescue:C_Small-device C24
 U 1 1 5719BF83
 P 8000 2300
 F 0 "C24" H 8010 2370 50  0000 L CNN
@@ -127,7 +127,7 @@ F 3 "" H 8000 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR031
+L esp32ValveControl-rescue:GND-power #PWR031
 U 1 1 5719D842
 P 8000 2400
 F 0 "#PWR031" H 8000 2150 50  0001 C CNN
@@ -138,7 +138,7 @@ F 3 "" H 8000 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR032
+L esp32ValveControl-rescue:GND-power #PWR032
 U 1 1 5719DCF3
 P 8900 2550
 F 0 "#PWR032" H 8900 2300 50  0001 C CNN
@@ -149,18 +149,18 @@ F 3 "" H 8900 2550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:D_Schottky D4
+L esp32ValveControl-rescue:D_Schottky-device D4
 U 1 1 5719E7F0
 P 9900 2250
 F 0 "D4" H 9900 2350 50  0000 C CNN
 F 1 "MBRS140" H 9900 2150 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 9900 2250 60  0001 C CNN
+F 2 "Diodes_SMD:D_SMA" H 9900 2250 60  0001 C CNN
 F 3 "" H 9900 2250 60  0000 C CNN
 	1    9900 2250
 	0    1    1    0   
 $EndComp
 $Comp
-L device:L_Small L9
+L esp32ValveControl-rescue:L_Small-device L9
 U 1 1 5719EC5C
 P 10050 2100
 F 0 "L9" H 10080 2140 50  0000 L CNN
@@ -172,7 +172,7 @@ F 4 "74477728" H 10050 2100 60  0001 C CNN "Wuerth"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:CP_Small C25
+L esp32ValveControl-rescue:CP_Small-device C25
 U 1 1 5719EDBF
 P 10350 2200
 F 0 "C25" H 10360 2270 50  0000 L CNN
@@ -183,7 +183,7 @@ F 3 "" H 10350 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R13
+L esp32ValveControl-rescue:R-device R13
 U 1 1 5719F390
 P 10600 2250
 F 0 "R13" V 10680 2250 50  0000 C CNN
@@ -194,7 +194,7 @@ F 3 "" H 10600 2250 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R14
+L esp32ValveControl-rescue:R-device R14
 U 1 1 5719F776
 P 10600 2600
 F 0 "R14" V 10680 2600 50  0000 C CNN
@@ -205,7 +205,7 @@ F 3 "" H 10600 2600 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR033
+L esp32ValveControl-rescue:GND-power #PWR033
 U 1 1 5719F875
 P 10600 2750
 F 0 "#PWR033" H 10600 2500 50  0001 C CNN
@@ -216,7 +216,7 @@ F 3 "" H 10600 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR034
+L esp32ValveControl-rescue:GND-power #PWR034
 U 1 1 5719F961
 P 9900 2400
 F 0 "#PWR034" H 9900 2150 50  0001 C CNN
@@ -227,7 +227,7 @@ F 3 "" H 9900 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR035
+L esp32ValveControl-rescue:GND-power #PWR035
 U 1 1 571A075F
 P 10350 2300
 F 0 "#PWR035" H 10350 2050 50  0001 C CNN
@@ -238,7 +238,7 @@ F 3 "" H 10350 2300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR036
+L esp32ValveControl-rescue:+24V-power #PWR036
 U 1 1 571A16E1
 P 8900 1500
 F 0 "#PWR036" H 8900 1350 50  0001 C CNN
@@ -249,7 +249,7 @@ F 3 "" H 8900 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR037
+L esp32ValveControl-rescue:+3.3V-power #PWR037
 U 1 1 571A270C
 P 10600 2100
 F 0 "#PWR037" H 10600 1950 50  0001 C CNN
@@ -260,18 +260,18 @@ F 3 "" H 10600 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:D_Schottky D5
+L esp32ValveControl-rescue:D_Schottky-device D5
 U 1 1 57169594
 P 8050 800
 F 0 "D5" H 8050 900 50  0000 C CNN
 F 1 "MBRS140" H 8050 700 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 8050 800 60  0001 C CNN
+F 2 "Diodes_SMD:D_SMA" H 8050 800 60  0001 C CNN
 F 3 "" H 8050 800 60  0000 C CNN
 	1    8050 800 
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+24V #PWR038
+L esp32ValveControl-rescue:+24V-power #PWR038
 U 1 1 5716ABCD
 P 9000 800
 F 0 "#PWR038" H 9000 650 50  0001 C CNN
@@ -282,7 +282,7 @@ F 3 "" H 9000 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C27
+L esp32ValveControl-rescue:C_Small-device C27
 U 1 1 5716B3F7
 P 9000 900
 F 0 "C27" H 9010 970 50  0000 L CNN
@@ -293,7 +293,7 @@ F 3 "" H 9000 900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:CP_Small C28
+L esp32ValveControl-rescue:CP_Small-device C28
 U 1 1 5717037A
 P 8650 900
 F 0 "C28" H 8650 1050 50  0000 L CNN
@@ -304,158 +304,70 @@ F 3 "" H 8650 900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:TVS D7
+L esp32ValveControl-rescue:TVS-device D7
 U 1 1 57187742
 P 7700 1100
 F 0 "D7" H 7700 1250 50  0000 C CNN
 F 1 "TVS" H 7700 950 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 7700 1100 60  0001 C CNN
+F 2 "Diodes_SMD:D_SMA" H 7700 1100 60  0001 C CNN
 F 3 "" H 7700 1100 60  0000 C CNN
 	1    7700 1100
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R15
+L esp32ValveControl-rescue:R-device R15
 U 1 1 5718B3A4
-P 800 6550
-F 0 "R15" V 880 6550 50  0000 C CNN
-F 1 "10k" V 800 6550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 730 6550 30  0001 C CNN
-F 3 "" H 800 6550 30  0000 C CNN
-	1    800  6550
+P 8100 4500
+F 0 "R15" V 8180 4500 50  0000 C CNN
+F 1 "10k" V 8100 4500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8030 4500 30  0001 C CNN
+F 3 "" H 8100 4500 30  0000 C CNN
+	1    8100 4500
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R16
+L esp32ValveControl-rescue:R-device R16
 U 1 1 5718B602
-P 800 6950
-F 0 "R16" V 880 6950 50  0000 C CNN
-F 1 "1k" V 800 6950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 730 6950 30  0001 C CNN
-F 3 "" H 800 6950 30  0000 C CNN
-	1    800  6950
+P 8100 4900
+F 0 "R16" V 8180 4900 50  0000 C CNN
+F 1 "1k" V 8100 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8030 4900 30  0001 C CNN
+F 3 "" H 8100 4900 30  0000 C CNN
+	1    8100 4900
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:D_Small D6
+L esp32ValveControl-rescue:D_Small-device D6
 U 1 1 5718BCA3
-P 1000 6900
-F 0 "D6" H 950 6980 50  0000 L CNN
-F 1 "D_Small" H 850 6820 50  0000 L CNN
-F 2 "Diodes_SMD:MiniMELF_Standard" V 1000 6900 60  0001 C CNN
-F 3 "" V 1000 6900 60  0000 C CNN
-	1    1000 6900
+P 8300 4850
+F 0 "D6" H 8250 4930 50  0000 L CNN
+F 1 "D_Small" H 8150 4770 50  0000 L CNN
+F 2 "Diodes_SMD:MiniMELF_Standard" V 8300 4850 60  0001 C CNN
+F 3 "" V 8300 4850 60  0000 C CNN
+	1    8300 4850
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR041
+L esp32ValveControl-rescue:GND-power #PWR041
 U 1 1 5718BDE3
-P 800 7200
-F 0 "#PWR041" H 800 6950 50  0001 C CNN
-F 1 "GND" H 800 7050 50  0000 C CNN
-F 2 "" H 800 7200 60  0000 C CNN
-F 3 "" H 800 7200 60  0000 C CNN
-	1    800  7200
+P 8100 5150
+F 0 "#PWR041" H 8100 4900 50  0001 C CNN
+F 1 "GND" H 8100 5000 50  0000 C CNN
+F 2 "" H 8100 5150 60  0000 C CNN
+F 3 "" H 8100 5150 60  0000 C CNN
+	1    8100 5150
 	1    0    0    -1  
 $EndComp
 Text Label 7450 800  0    60   ~ 0
 Vin
-Text Label 800  6250 3    60   ~ 0
+Text Label 8100 4200 3    60   ~ 0
 Vin
-Text Label 1050 6800 0    60   ~ 0
+Text Label 8350 4750 0    60   ~ 0
 COMP+
-Text Notes 900  6650 0    60   ~ 0
+Text Notes 8200 4600 0    60   ~ 0
 ZeroCrossingDetection\n
 $Comp
-L device:TVS D8
-U 1 1 5716D8BA
-P 4650 1550
-F 0 "D8" H 4650 1700 50  0000 C CNN
-F 1 "TVS" H 4650 1400 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 4650 1550 60  0001 C CNN
-F 3 "" H 4650 1550 60  0000 C CNN
-	1    4650 1550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L device:TVS D9
-U 1 1 5716DA15
-P 4650 1350
-F 0 "D9" H 4650 1500 50  0000 C CNN
-F 1 "TVS" H 4650 1200 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 4650 1350 60  0001 C CNN
-F 3 "" H 4650 1350 60  0000 C CNN
-	1    4650 1350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L device:TVS D10
-U 1 1 5716DB5D
-P 4650 1150
-F 0 "D10" H 4650 1300 50  0000 C CNN
-F 1 "TVS" H 4650 1000 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 4650 1150 60  0001 C CNN
-F 3 "" H 4650 1150 60  0000 C CNN
-	1    4650 1150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L device:TVS D11
-U 1 1 5716DCB0
-P 4650 950
-F 0 "D11" H 4650 1100 50  0000 C CNN
-F 1 "TVS" H 4650 800 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Standard" H 4650 950 60  0001 C CNN
-F 3 "" H 4650 950 60  0000 C CNN
-	1    4650 950 
-	-1   0    0    -1  
-$EndComp
-$Comp
-L device:LED D12
-U 1 1 57178993
-P 8300 3550
-F 0 "D12" H 8300 3650 50  0000 C CNN
-F 1 "LED" H 8300 3450 50  0000 C CNN
-F 2 "LEDs:LED-0603" H 8300 3550 50  0001 C CNN
-F 3 "" H 8300 3550 50  0000 C CNN
-	1    8300 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L device:LED D13
-U 1 1 5717AD7A
-P 9100 3550
-F 0 "D13" H 9100 3650 50  0000 C CNN
-F 1 "LED" H 9100 3450 50  0000 C CNN
-F 2 "LEDs:LED-0603" H 9100 3550 50  0001 C CNN
-F 3 "" H 9100 3550 50  0000 C CNN
-	1    9100 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L device:LED D14
-U 1 1 5717B883
-P 9900 3550
-F 0 "D14" H 9900 3650 50  0000 C CNN
-F 1 "LED" H 9900 3450 50  0000 C CNN
-F 2 "LEDs:LED-0603" H 9900 3550 50  0001 C CNN
-F 3 "" H 9900 3550 50  0000 C CNN
-	1    9900 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L device:LED D15
-U 1 1 5717B9E8
-P 10700 3550
-F 0 "D15" H 10700 3650 50  0000 C CNN
-F 1 "LED" H 10700 3450 50  0000 C CNN
-F 2 "LEDs:LED-0603" H 10700 3550 50  0001 C CNN
-F 3 "" H 10700 3550 50  0000 C CNN
-	1    10700 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR043
+L esp32ValveControl-rescue:GND-power #PWR043
 U 1 1 5717F692
 P 9000 1000
 F 0 "#PWR043" H 9000 750 50  0001 C CNN
@@ -466,7 +378,7 @@ F 3 "" H 9000 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C26
+L esp32ValveControl-rescue:C_Small-device C26
 U 1 1 5718676A
 P 10150 2200
 F 0 "C26" H 10160 2270 50  0000 L CNN
@@ -477,7 +389,7 @@ F 3 "" H 10150 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L esp32ValveControl-rescue:GND-power #PWR044
 U 1 1 57186D71
 P 10150 2300
 F 0 "#PWR044" H 10150 2050 50  0001 C CNN
@@ -499,7 +411,7 @@ F 3 "" H 5700 1200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR045
+L esp32ValveControl-rescue:GND-power #PWR045
 U 1 1 5718C7C7
 P 6700 950
 F 0 "#PWR045" H 6700 700 50  0001 C CNN
@@ -512,7 +424,7 @@ $EndComp
 Text Label 6700 850  0    60   ~ 0
 Vin
 $Comp
-L power:GND #PWR046
+L esp32ValveControl-rescue:GND-power #PWR046
 U 1 1 5718F290
 P 7700 1400
 F 0 "#PWR046" H 7700 1150 50  0001 C CNN
@@ -523,7 +435,7 @@ F 3 "" H 7700 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R32
+L esp32ValveControl-rescue:R-device R32
 U 1 1 571AEE8B
 P 6400 1350
 F 0 "R32" V 6480 1350 50  0000 C CNN
@@ -534,7 +446,7 @@ F 3 "" H 6400 1350 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R31
+L esp32ValveControl-rescue:R-device R31
 U 1 1 571AEFFE
 P 6400 1250
 F 0 "R31" V 6480 1250 50  0000 C CNN
@@ -548,82 +460,82 @@ Text Label 6750 1250 2    60   ~ 0
 IN1
 Text Label 6750 1350 2    60   ~ 0
 IN2
-Text Label 550  3300 0    60   ~ 0
+Text Label 550  4200 0    60   ~ 0
 IN1
-Text Label 550  3950 0    60   ~ 0
+Text Label 550  4850 0    60   ~ 0
 IN2
 $Comp
-L power:GND #PWR054
+L esp32ValveControl-rescue:GND-power #PWR054
 U 1 1 571B19D8
-P 1900 4150
-F 0 "#PWR054" H 1900 3900 50  0001 C CNN
-F 1 "GND" H 1900 4000 50  0000 C CNN
-F 2 "" H 1900 4150 60  0000 C CNN
-F 3 "" H 1900 4150 60  0000 C CNN
-	1    1900 4150
+P 1900 5050
+F 0 "#PWR054" H 1900 4800 50  0001 C CNN
+F 1 "GND" H 1900 4900 50  0000 C CNN
+F 2 "" H 1900 5050 60  0000 C CNN
+F 3 "" H 1900 5050 60  0000 C CNN
+	1    1900 5050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR055
+L esp32ValveControl-rescue:GND-power #PWR055
 U 1 1 571B1B2D
-P 1900 3500
-F 0 "#PWR055" H 1900 3250 50  0001 C CNN
-F 1 "GND" H 1900 3350 50  0000 C CNN
-F 2 "" H 1900 3500 60  0000 C CNN
-F 3 "" H 1900 3500 60  0000 C CNN
-	1    1900 3500
+P 1900 4400
+F 0 "#PWR055" H 1900 4150 50  0001 C CNN
+F 1 "GND" H 1900 4250 50  0000 C CNN
+F 2 "" H 1900 4400 60  0000 C CNN
+F 3 "" H 1900 4400 60  0000 C CNN
+	1    1900 4400
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R17
+L esp32ValveControl-rescue:R-device R17
 U 1 1 571B4108
-P 2000 3150
-F 0 "R17" V 2080 3150 50  0000 C CNN
-F 1 "10k" V 2000 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1930 3150 30  0001 C CNN
-F 3 "" H 2000 3150 30  0000 C CNN
-	1    2000 3150
+P 2000 4050
+F 0 "R17" V 2080 4050 50  0000 C CNN
+F 1 "10k" V 2000 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1930 4050 30  0001 C CNN
+F 3 "" H 2000 4050 30  0000 C CNN
+	1    2000 4050
 	1    0    0    1   
 $EndComp
 $Comp
-L device:R R30
+L esp32ValveControl-rescue:R-device R30
 U 1 1 571B4C73
-P 2000 3800
-F 0 "R30" V 2080 3800 50  0000 C CNN
-F 1 "10k" V 2000 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1930 3800 30  0001 C CNN
-F 3 "" H 2000 3800 30  0000 C CNN
-	1    2000 3800
+P 2000 4700
+F 0 "R30" V 2080 4700 50  0000 C CNN
+F 1 "10k" V 2000 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1930 4700 30  0001 C CNN
+F 3 "" H 2000 4700 30  0000 C CNN
+	1    2000 4700
 	1    0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR056
+L esp32ValveControl-rescue:+3.3V-power #PWR056
 U 1 1 571B54EB
-P 2000 3650
-F 0 "#PWR056" H 2000 3500 50  0001 C CNN
-F 1 "+3.3V" H 2000 3790 50  0000 C CNN
-F 2 "" H 2000 3650 60  0000 C CNN
-F 3 "" H 2000 3650 60  0000 C CNN
-	1    2000 3650
+P 2000 4550
+F 0 "#PWR056" H 2000 4400 50  0001 C CNN
+F 1 "+3.3V" H 2000 4690 50  0000 C CNN
+F 2 "" H 2000 4550 60  0000 C CNN
+F 3 "" H 2000 4550 60  0000 C CNN
+	1    2000 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR057
+L esp32ValveControl-rescue:+3.3V-power #PWR057
 U 1 1 571B5F76
-P 2000 3000
-F 0 "#PWR057" H 2000 2850 50  0001 C CNN
-F 1 "+3.3V" H 2000 3140 50  0000 C CNN
-F 2 "" H 2000 3000 60  0000 C CNN
-F 3 "" H 2000 3000 60  0000 C CNN
-	1    2000 3000
+P 2000 3900
+F 0 "#PWR057" H 2000 3750 50  0001 C CNN
+F 1 "+3.3V" H 2000 4040 50  0000 C CNN
+F 2 "" H 2000 3900 60  0000 C CNN
+F 3 "" H 2000 3900 60  0000 C CNN
+	1    2000 3900
 	1    0    0    -1  
 $EndComp
-Text Label 2100 3300 0    60   ~ 0
+Text Label 2100 4200 0    60   ~ 0
 OPTO1
-Text Label 2100 3950 0    60   ~ 0
+Text Label 2100 4850 0    60   ~ 0
 OPTO2
 $Comp
-L device:F_Small F1
+L esp32ValveControl-rescue:F_Small-device F1
 U 1 1 571D2ECA
 P 8400 800
 F 0 "F1" H 8360 860 50  0000 L CNN
@@ -632,182 +544,6 @@ F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Wave" H 8400 800 60  0001 C CNN
 F 3 "" H 8400 800 60  0000 C CNN
 	1    8400 800 
 	1    0    0    -1  
-$EndComp
-$Comp
-L transistors:BSS138 Q1
-U 1 1 571A1A38
-P 8200 4250
-F 0 "Q1" H 8200 4101 40  0000 R CNN
-F 1 "BSS138" H 8200 4400 40  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 8070 4352 29  0000 C CNN
-F 3 "" H 8200 4250 60  0000 C CNN
-	1    8200 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L transistors:BSS138 Q2
-U 1 1 571A1BC5
-P 9000 4250
-F 0 "Q2" H 9000 4101 40  0000 R CNN
-F 1 "BSS138" H 9000 4400 40  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 8870 4352 29  0000 C CNN
-F 3 "" H 9000 4250 60  0000 C CNN
-	1    9000 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L transistors:BSS138 Q5
-U 1 1 571A1D61
-P 9800 4250
-F 0 "Q5" H 9800 4101 40  0000 R CNN
-F 1 "BSS138" H 9800 4400 40  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 9670 4352 29  0000 C CNN
-F 3 "" H 9800 4250 60  0000 C CNN
-	1    9800 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L transistors:BSS138 Q7
-U 1 1 571A1EFE
-P 10600 4250
-F 0 "Q7" H 10600 4101 40  0000 R CNN
-F 1 "BSS138" H 10600 4400 40  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 10470 4352 29  0000 C CNN
-F 3 "" H 10600 4250 60  0000 C CNN
-	1    10600 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR058
-U 1 1 571A2C56
-P 8300 4450
-F 0 "#PWR058" H 8300 4200 50  0001 C CNN
-F 1 "GND" H 8300 4300 50  0000 C CNN
-F 2 "" H 8300 4450 60  0000 C CNN
-F 3 "" H 8300 4450 60  0000 C CNN
-	1    8300 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR059
-U 1 1 571A2DC0
-P 9100 4450
-F 0 "#PWR059" H 9100 4200 50  0001 C CNN
-F 1 "GND" H 9100 4300 50  0000 C CNN
-F 2 "" H 9100 4450 60  0000 C CNN
-F 3 "" H 9100 4450 60  0000 C CNN
-	1    9100 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR060
-U 1 1 571A2F2A
-P 9900 4450
-F 0 "#PWR060" H 9900 4200 50  0001 C CNN
-F 1 "GND" H 9900 4300 50  0000 C CNN
-F 2 "" H 9900 4450 60  0000 C CNN
-F 3 "" H 9900 4450 60  0000 C CNN
-	1    9900 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR061
-U 1 1 571A3094
-P 10700 4450
-F 0 "#PWR061" H 10700 4200 50  0001 C CNN
-F 1 "GND" H 10700 4300 50  0000 C CNN
-F 2 "" H 10700 4450 60  0000 C CNN
-F 3 "" H 10700 4450 60  0000 C CNN
-	1    10700 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R33
-U 1 1 571A3B2C
-P 8300 3900
-F 0 "R33" V 8380 3900 50  0000 C CNN
-F 1 "470" V 8300 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8230 3900 30  0001 C CNN
-F 3 "" H 8300 3900 30  0000 C CNN
-	1    8300 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R R34
-U 1 1 571ACE33
-P 9100 3900
-F 0 "R34" V 9180 3900 50  0000 C CNN
-F 1 "470" V 9100 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9030 3900 30  0001 C CNN
-F 3 "" H 9100 3900 30  0000 C CNN
-	1    9100 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R R35
-U 1 1 571ACFAC
-P 9900 3900
-F 0 "R35" V 9980 3900 50  0000 C CNN
-F 1 "470" V 9900 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9830 3900 30  0001 C CNN
-F 3 "" H 9900 3900 30  0000 C CNN
-	1    9900 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R R36
-U 1 1 571AD122
-P 10700 3900
-F 0 "R36" V 10780 3900 50  0000 C CNN
-F 1 "470" V 10700 3900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10630 3900 30  0001 C CNN
-F 3 "" H 10700 3900 30  0000 C CNN
-	1    10700 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR062
-U 1 1 571B35C4
-P 8300 3350
-F 0 "#PWR062" H 8300 3200 50  0001 C CNN
-F 1 "+3.3V" H 8300 3490 50  0000 C CNN
-F 2 "" H 8300 3350 60  0000 C CNN
-F 3 "" H 8300 3350 60  0000 C CNN
-	1    8300 3350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR063
-U 1 1 571B3C9F
-P 9100 3350
-F 0 "#PWR063" H 9100 3200 50  0001 C CNN
-F 1 "+3.3V" H 9100 3490 50  0000 C CNN
-F 2 "" H 9100 3350 60  0000 C CNN
-F 3 "" H 9100 3350 60  0000 C CNN
-	1    9100 3350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR064
-U 1 1 571B4829
-P 9900 3350
-F 0 "#PWR064" H 9900 3200 50  0001 C CNN
-F 1 "+3.3V" H 9900 3490 50  0000 C CNN
-F 2 "" H 9900 3350 60  0000 C CNN
-F 3 "" H 9900 3350 60  0000 C CNN
-	1    9900 3350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR065
-U 1 1 571B497B
-P 10700 3350
-F 0 "#PWR065" H 10700 3200 50  0001 C CNN
-F 1 "+3.3V" H 10700 3490 50  0000 C CNN
-F 2 "" H 10700 3350 60  0000 C CNN
-F 3 "" H 10700 3350 60  0000 C CNN
-	1    10700 3350
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9100 5800 9100 5900
@@ -847,17 +583,17 @@ Connection ~ 8650 1000
 Wire Wire Line
 	7450 800  7700 800 
 Wire Wire Line
-	800  6400 800  6250
+	8100 4350 8100 4200
 Wire Wire Line
-	800  6700 800  6800
+	8100 4650 8100 4750
 Wire Wire Line
-	800  7100 800  7200
+	8100 5050 8100 5150
 Wire Wire Line
-	800  7100 1000 7100
+	8100 5050 8300 5050
 Wire Wire Line
-	1000 7100 1000 7000
+	8300 5050 8300 4950
 Wire Wire Line
-	800  6800 1000 6800
+	8100 4750 8300 4750
 Connection ~ 9000 1000
 Connection ~ 10150 2100
 Wire Wire Line
@@ -872,8 +608,8 @@ Wire Wire Line
 Wire Wire Line
 	6550 1350 6750 1350
 Wire Wire Line
-	1900 3950 2000 3950
-Connection ~ 2000 3950
+	1900 4850 2000 4850
+Connection ~ 2000 4850
 Wire Wire Line
 	8300 800  8200 800 
 Connection ~ 8050 1550
@@ -885,7 +621,7 @@ Wire Wire Line
 	9750 1350 8050 1350
 Connection ~ 7700 1400
 $Comp
-L power:GND #PWR066
+L esp32ValveControl-rescue:GND-power #PWR066
 U 1 1 571B96A6
 P 4350 1750
 F 0 "#PWR066" H 4350 1500 50  0001 C CNN
@@ -895,23 +631,15 @@ F 3 "" H 4350 1750 60  0000 C CNN
 	1    4350 1750
 	1    0    0    -1  
 $EndComp
-Text Label 8000 4300 2    60   ~ 0
-CH1
-Text Label 8800 4300 2    60   ~ 0
-CH2
-Text Label 9600 4300 2    60   ~ 0
-CH3
-Text Label 10400 4300 2    60   ~ 0
-CH4
 $Comp
 L ESP32-footprints-Shem-Lib:ESP32-WROOM U1
 U 1 1 5AF74CA0
-P 5050 4500
-F 0 "U1" H 4350 5750 60  0000 C CNN
-F 1 "ESP32-WROOM" H 5550 5750 60  0000 C CNN
-F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 5400 5850 60  0001 C CNN
-F 3 "" H 4600 4950 60  0001 C CNN
-	1    5050 4500
+P 5050 5400
+F 0 "U1" H 4350 6650 60  0000 C CNN
+F 1 "ESP32-WROOM" H 5550 6650 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 5400 6750 60  0001 C CNN
+F 3 "" H 4600 5850 60  0001 C CNN
+	1    5050 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -928,227 +656,31 @@ Wire Wire Line
 	7700 800  7900 800 
 Wire Wire Line
 	8050 1550 8050 1900
-$Comp
-L aqy212:AQY212 U2
-U 1 1 5B7ADA07
-P 1600 1350
-F 0 "U2" H 1600 1765 50  0000 C CNN
-F 1 "AQY212" H 1600 1674 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads" H 1600 1583 50  0000 C CIN
-F 3 "http://www.semicon.toshiba.co.jp/docs/datasheet/en/Opto/TLP222A_TLP222A-2_en_datasheet_071001.pdf" H 1600 1584 50  0001 C CNN
-	1    1600 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1300 1450 900  1450
-Text Label 950  1450 0    60   ~ 0
-CH1
-Wire Wire Line
-	1900 1450 2500 1450
-Text Label 2500 1450 0    60   ~ 0
-OUT1
-Wire Wire Line
-	2300 1250 1900 1250
-Text Label 1950 1250 0    60   ~ 0
-Vin
-Wire Wire Line
-	1900 3300 2000 3300
-Connection ~ 2000 3300
-$Comp
-L device:R R1
-U 1 1 5B7CC17F
-P 1150 1250
-F 0 "R1" V 1230 1250 50  0000 C CNN
-F 1 "10k" V 1150 1250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1080 1250 30  0001 C CNN
-F 3 "" H 1150 1250 30  0000 C CNN
-	1    1150 1250
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR01
-U 1 1 5B7CC185
-P 1000 1250
-F 0 "#PWR01" H 1000 1100 50  0001 C CNN
-F 1 "+3.3V" H 1000 1390 50  0000 C CNN
-F 2 "" H 1000 1250 60  0000 C CNN
-F 3 "" H 1000 1250 60  0000 C CNN
-	1    1000 1250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L aqy212:AQY212 U3
-U 1 1 5B7D34B5
-P 1600 1750
-F 0 "U3" H 1600 2165 50  0000 C CNN
-F 1 "AQY212" H 1600 2074 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads" H 1600 1983 50  0000 C CIN
-F 3 "http://www.semicon.toshiba.co.jp/docs/datasheet/en/Opto/TLP222A_TLP222A-2_en_datasheet_071001.pdf" H 1600 1984 50  0001 C CNN
-	1    1600 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 1850 900  1850
-Text Label 950  1850 0    60   ~ 0
-CH2
-Wire Wire Line
-	1900 1850 2500 1850
-Text Label 2500 1850 0    60   ~ 0
-OUT2
-Wire Wire Line
-	2300 1650 1900 1650
-Text Label 1950 1650 0    60   ~ 0
-Vin
-$Comp
-L device:R R2
-U 1 1 5B7D34C1
-P 1150 1650
-F 0 "R2" V 1230 1650 50  0000 C CNN
-F 1 "10k" V 1150 1650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1080 1650 30  0001 C CNN
-F 3 "" H 1150 1650 30  0000 C CNN
-	1    1150 1650
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR02
-U 1 1 5B7D34C7
-P 1000 1650
-F 0 "#PWR02" H 1000 1500 50  0001 C CNN
-F 1 "+3.3V" H 1000 1790 50  0000 C CNN
-F 2 "" H 1000 1650 60  0000 C CNN
-F 3 "" H 1000 1650 60  0000 C CNN
-	1    1000 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L aqy212:AQY212 U6
-U 1 1 5B7D5F9F
-P 1600 2200
-F 0 "U6" H 1600 2615 50  0000 C CNN
-F 1 "AQY212" H 1600 2524 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads" H 1600 2433 50  0000 C CIN
-F 3 "http://www.semicon.toshiba.co.jp/docs/datasheet/en/Opto/TLP222A_TLP222A-2_en_datasheet_071001.pdf" H 1600 2434 50  0001 C CNN
-	1    1600 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 2300 900  2300
-Text Label 950  2300 0    60   ~ 0
-CH3
-Wire Wire Line
-	1900 2300 2500 2300
-Text Label 2500 2300 0    60   ~ 0
-OUT3
-Wire Wire Line
-	2300 2100 1900 2100
-Text Label 1950 2100 0    60   ~ 0
-Vin
-$Comp
-L device:R R6
-U 1 1 5B7D5FAB
-P 1150 2100
-F 0 "R6" V 1230 2100 50  0000 C CNN
-F 1 "10k" V 1150 2100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1080 2100 30  0001 C CNN
-F 3 "" H 1150 2100 30  0000 C CNN
-	1    1150 2100
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR03
-U 1 1 5B7D5FB1
-P 1000 2100
-F 0 "#PWR03" H 1000 1950 50  0001 C CNN
-F 1 "+3.3V" H 1000 2240 50  0000 C CNN
-F 2 "" H 1000 2100 60  0000 C CNN
-F 3 "" H 1000 2100 60  0000 C CNN
-	1    1000 2100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L aqy212:AQY212 U7
-U 1 1 5B7D5FB7
-P 1600 2600
-F 0 "U7" H 1600 3015 50  0000 C CNN
-F 1 "AQY212" H 1600 2924 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads" H 1600 2833 50  0000 C CIN
-F 3 "http://www.semicon.toshiba.co.jp/docs/datasheet/en/Opto/TLP222A_TLP222A-2_en_datasheet_071001.pdf" H 1600 2834 50  0001 C CNN
-	1    1600 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 2700 900  2700
-Text Label 950  2700 0    60   ~ 0
-CH4
-Wire Wire Line
-	1900 2700 2500 2700
-Text Label 2500 2700 0    60   ~ 0
-OUT4
-Wire Wire Line
-	2300 2500 1900 2500
-Text Label 1950 2500 0    60   ~ 0
-Vin
-$Comp
-L device:R R7
-U 1 1 5B7D5FC3
-P 1150 2500
-F 0 "R7" V 1230 2500 50  0000 C CNN
-F 1 "10k" V 1150 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1080 2500 30  0001 C CNN
-F 3 "" H 1150 2500 30  0000 C CNN
-	1    1150 2500
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR04
-U 1 1 5B7D5FC9
-P 1000 2500
-F 0 "#PWR04" H 1000 2350 50  0001 C CNN
-F 1 "+3.3V" H 1000 2640 50  0000 C CNN
-F 2 "" H 1000 2500 60  0000 C CNN
-F 3 "" H 1000 2500 60  0000 C CNN
-	1    1000 2500
-	0    -1   -1   0   
-$EndComp
+	1900 4200 2000 4200
+Connection ~ 2000 4200
 Wire Wire Line
 	8650 5900 9100 5900
 Connection ~ 9250 5900
-Connection ~ 9100 5900
 Wire Wire Line
 	9100 5900 9250 5900
 Wire Wire Line
 	4950 950  5400 950 
 Wire Wire Line
-	4350 1350 4350 1450
-Wire Wire Line
 	4950 1150 5400 1150
-Connection ~ 4350 1550
 Wire Wire Line
 	4950 1350 5400 1350
 Wire Wire Line
 	4950 1550 5400 1550
 Wire Wire Line
-	4350 1350 4350 1250
-Connection ~ 4350 1350
-Wire Wire Line
-	4350 950  4350 1050
-Connection ~ 4350 1150
-Wire Wire Line
 	5400 1450 4350 1450
 Connection ~ 4350 1450
-Wire Wire Line
-	4350 1450 4350 1550
 Wire Wire Line
 	5400 1250 4350 1250
 Connection ~ 4350 1250
 Wire Wire Line
-	4350 1250 4350 1150
-Wire Wire Line
 	5400 1050 4350 1050
 Connection ~ 4350 1050
-Wire Wire Line
-	4350 1050 4350 1150
 Text Label 5100 950  0    60   ~ 0
 OUT1
 Text Label 5100 1150 0    60   ~ 0
@@ -1168,12 +700,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 850  4350 850 
 Wire Wire Line
-	4350 850  4350 950 
-Connection ~ 4350 950 
-Wire Wire Line
 	4350 1650 4350 1750
-Wire Wire Line
-	4350 1550 4350 1650
 Connection ~ 4350 1650
 Wire Wire Line
 	5400 1650 4350 1650
@@ -1194,7 +721,7 @@ F 3 "" H 10750 5850 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:R R23
+L esp32ValveControl-rescue:R-device R23
 U 1 1 5B7CF128
 P 10950 6050
 F 0 "R23" V 11030 6050 50  0000 C CNN
@@ -1205,7 +732,7 @@ F 3 "" H 10950 6050 30  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:C_Small C1
+L esp32ValveControl-rescue:C_Small-device C1
 U 1 1 5B7CF12E
 P 10550 6000
 F 0 "C1" H 10560 6070 50  0000 L CNN
@@ -1216,7 +743,7 @@ F 3 "" H 10550 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L esp32ValveControl-rescue:GND-power #PWR05
 U 1 1 5B7CF134
 P 10550 6100
 F 0 "#PWR05" H 10550 5850 50  0001 C CNN
@@ -1227,7 +754,7 @@ F 3 "" H 10550 6100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L esp32ValveControl-rescue:GND-power #PWR06
 U 1 1 5B7CF13A
 P 10950 6200
 F 0 "#PWR06" H 10950 5950 50  0001 C CNN
@@ -1240,7 +767,7 @@ $EndComp
 Text Label 9950 5900 0    60   ~ 0
 nBoot
 $Comp
-L device:R R22
+L esp32ValveControl-rescue:R-device R22
 U 1 1 5B7CF141
 P 10400 5650
 F 0 "R22" V 10480 5650 50  0000 C CNN
@@ -1251,7 +778,7 @@ F 3 "" H 10400 5650 30  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR07
+L esp32ValveControl-rescue:+3.3V-power #PWR07
 U 1 1 5B7CF147
 P 10400 5450
 F 0 "#PWR07" H 10400 5300 50  0001 C CNN
@@ -1276,117 +803,117 @@ Wire Wire Line
 	10550 5900 10550 5800
 Wire Wire Line
 	10950 5900 10950 5800
-Text Label 6500 4950 0    60   ~ 0
+Text Label 6500 5850 0    60   ~ 0
 nBoot
 $Comp
-L conn:CONN_01X05 P1
+L esp32ValveControl-rescue:CONN_01X05-conn P1
 U 1 1 5B7DA8BB
-P 7150 4850
-F 0 "P1" H 7228 4891 50  0000 L CNN
-F 1 "CONN_01X05" H 7228 4800 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 7150 4850 50  0001 C CNN
-F 3 "" H 7150 4850 50  0000 C CNN
-	1    7150 4850
+P 7150 5750
+F 0 "P1" H 7228 5791 50  0000 L CNN
+F 1 "CONN_01X05" H 7228 5700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 7150 5750 50  0001 C CNN
+F 3 "" H 7150 5750 50  0000 C CNN
+	1    7150 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 4950 6950 4950
+	5950 5850 6950 5850
 Wire Wire Line
-	6950 4850 6450 4850
-Text Label 6500 4850 0    60   ~ 0
+	6950 5750 6450 5750
+Text Label 6500 5750 0    60   ~ 0
 nReset
 Wire Wire Line
-	6950 4650 6850 4650
+	6950 5550 6850 5550
 Wire Wire Line
-	6850 4650 6850 3950
+	6850 5550 6850 4850
 Wire Wire Line
-	6850 3950 5950 3950
+	6850 4850 5950 4850
 Wire Wire Line
-	5950 4050 6750 4050
+	5950 4950 6750 4950
 Wire Wire Line
-	6750 4050 6750 4750
+	6750 4950 6750 5650
 Wire Wire Line
-	6750 4750 6950 4750
+	6750 5650 6950 5650
 $Comp
-L power:GND #PWR08
+L esp32ValveControl-rescue:GND-power #PWR08
 U 1 1 5B7E81D9
-P 6950 5050
-F 0 "#PWR08" H 6950 4800 50  0001 C CNN
-F 1 "GND" H 6950 4900 50  0000 C CNN
-F 2 "" H 6950 5050 60  0000 C CNN
-F 3 "" H 6950 5050 60  0000 C CNN
-	1    6950 5050
+P 6950 5950
+F 0 "#PWR08" H 6950 5700 50  0001 C CNN
+F 1 "GND" H 6950 5800 50  0000 C CNN
+F 2 "" H 6950 5950 60  0000 C CNN
+F 3 "" H 6950 5950 60  0000 C CNN
+	1    6950 5950
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L esp32ValveControl-rescue:GND-power #PWR09
 U 1 1 5B7E85C5
-P 6150 5150
-F 0 "#PWR09" H 6150 4900 50  0001 C CNN
-F 1 "GND" H 6150 5000 50  0000 C CNN
-F 2 "" H 6150 5150 60  0000 C CNN
-F 3 "" H 6150 5150 60  0000 C CNN
-	1    6150 5150
+P 6150 6050
+F 0 "#PWR09" H 6150 5800 50  0001 C CNN
+F 1 "GND" H 6150 5900 50  0000 C CNN
+F 2 "" H 6150 6050 60  0000 C CNN
+F 3 "" H 6150 6050 60  0000 C CNN
+	1    6150 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 5150 6150 5150
+	5950 6050 6150 6050
 Wire Wire Line
-	5950 5050 6150 5050
+	5950 5950 6150 5950
 Wire Wire Line
-	6150 5050 6150 5150
-Connection ~ 6150 5150
+	6150 5950 6150 6050
+Connection ~ 6150 6050
 $Comp
-L power:GND #PWR010
+L esp32ValveControl-rescue:GND-power #PWR010
 U 1 1 5B7EE6CA
-P 4600 5700
-F 0 "#PWR010" H 4600 5450 50  0001 C CNN
-F 1 "GND" H 4600 5550 50  0000 C CNN
-F 2 "" H 4600 5700 60  0000 C CNN
-F 3 "" H 4600 5700 60  0000 C CNN
-	1    4600 5700
+P 4600 6600
+F 0 "#PWR010" H 4600 6350 50  0001 C CNN
+F 1 "GND" H 4600 6450 50  0000 C CNN
+F 2 "" H 4600 6600 60  0000 C CNN
+F 3 "" H 4600 6600 60  0000 C CNN
+	1    4600 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 5700 4600 5550
+	4600 6600 4600 6450
 Wire Wire Line
-	4100 5200 4100 5550
+	4100 6100 4100 6450
 Wire Wire Line
-	4100 5550 4600 5550
-Connection ~ 4600 5550
+	4100 6450 4600 6450
+Connection ~ 4600 6450
 $Comp
-L power:+3.3V #PWR011
+L esp32ValveControl-rescue:+3.3V-power #PWR011
 U 1 1 5B7F5992
-P 3600 3900
-F 0 "#PWR011" H 3600 3750 50  0001 C CNN
-F 1 "+3.3V" H 3600 4040 50  0000 C CNN
-F 2 "" H 3600 3900 60  0000 C CNN
-F 3 "" H 3600 3900 60  0000 C CNN
-	1    3600 3900
+P 3600 4800
+F 0 "#PWR011" H 3600 4650 50  0001 C CNN
+F 1 "+3.3V" H 3600 4940 50  0000 C CNN
+F 2 "" H 3600 4800 60  0000 C CNN
+F 3 "" H 3600 4800 60  0000 C CNN
+	1    3600 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 3900 4100 3900
+	3600 4800 4100 4800
 $Comp
-L device:R R19
+L esp32ValveControl-rescue:R-device R19
 U 1 1 5B7F8F4F
-P 3800 4000
-F 0 "R19" V 3880 4000 50  0000 C CNN
-F 1 "10k" V 3800 4000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 3730 4000 30  0001 C CNN
-F 3 "" H 3800 4000 30  0000 C CNN
-	1    3800 4000
+P 3800 4900
+F 0 "R19" V 3880 4900 50  0000 C CNN
+F 1 "10k" V 3800 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3730 4900 30  0001 C CNN
+F 3 "" H 3800 4900 30  0000 C CNN
+	1    3800 4900
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4100 4000 3950 4000
+	4100 4900 3950 4900
 Wire Wire Line
-	3650 4000 3600 4000
+	3650 4900 3600 4900
 Wire Wire Line
-	3600 4000 3600 3900
-Connection ~ 3600 3900
+	3600 4900 3600 4800
+Connection ~ 3600 4800
 $Comp
-L device:R R21
+L esp32ValveControl-rescue:R-device R21
 U 1 1 5B802B74
 P 6400 1550
 F 0 "R21" V 6480 1550 50  0000 C CNN
@@ -1397,7 +924,7 @@ F 3 "" H 6400 1550 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R R20
+L esp32ValveControl-rescue:R-device R20
 U 1 1 5B802B7A
 P 6400 1450
 F 0 "R20" V 6480 1450 50  0000 C CNN
@@ -1420,7 +947,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 1550 6250 1550
 $Comp
-L power:+24V #PWR012
+L esp32ValveControl-rescue:+24V-power #PWR012
 U 1 1 5B80E73C
 P 6700 1050
 F 0 "#PWR012" H 6700 900 50  0001 C CNN
@@ -1433,7 +960,7 @@ $EndComp
 Wire Wire Line
 	6150 1050 6700 1050
 $Comp
-L power:GND #PWR013
+L esp32ValveControl-rescue:GND-power #PWR013
 U 1 1 5B8126B9
 P 6700 1150
 F 0 "#PWR013" H 6700 900 50  0001 C CNN
@@ -1445,192 +972,192 @@ F 3 "" H 6700 1150 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	6150 1150 6700 1150
-Text Label 550  4900 0    60   ~ 0
+Text Label 550  5800 0    60   ~ 0
 IN3
-Text Label 550  5550 0    60   ~ 0
+Text Label 550  6450 0    60   ~ 0
 IN4
 $Comp
-L power:GND #PWR014
+L esp32ValveControl-rescue:GND-power #PWR014
 U 1 1 5B81A87F
-P 1900 5750
-F 0 "#PWR014" H 1900 5500 50  0001 C CNN
-F 1 "GND" H 1900 5600 50  0000 C CNN
-F 2 "" H 1900 5750 60  0000 C CNN
-F 3 "" H 1900 5750 60  0000 C CNN
-	1    1900 5750
+P 1900 6650
+F 0 "#PWR014" H 1900 6400 50  0001 C CNN
+F 1 "GND" H 1900 6500 50  0000 C CNN
+F 2 "" H 1900 6650 60  0000 C CNN
+F 3 "" H 1900 6650 60  0000 C CNN
+	1    1900 6650
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L esp32ValveControl-rescue:GND-power #PWR015
 U 1 1 5B81A885
-P 1900 5100
-F 0 "#PWR015" H 1900 4850 50  0001 C CNN
-F 1 "GND" H 1900 4950 50  0000 C CNN
-F 2 "" H 1900 5100 60  0000 C CNN
-F 3 "" H 1900 5100 60  0000 C CNN
-	1    1900 5100
+P 1900 6000
+F 0 "#PWR015" H 1900 5750 50  0001 C CNN
+F 1 "GND" H 1900 5850 50  0000 C CNN
+F 2 "" H 1900 6000 60  0000 C CNN
+F 3 "" H 1900 6000 60  0000 C CNN
+	1    1900 6000
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R9
+L esp32ValveControl-rescue:R-device R9
 U 1 1 5B81A88B
-P 2000 4750
-F 0 "R9" V 2080 4750 50  0000 C CNN
-F 1 "10k" V 2000 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1930 4750 30  0001 C CNN
-F 3 "" H 2000 4750 30  0000 C CNN
-	1    2000 4750
+P 2000 5650
+F 0 "R9" V 2080 5650 50  0000 C CNN
+F 1 "10k" V 2000 5650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1930 5650 30  0001 C CNN
+F 3 "" H 2000 5650 30  0000 C CNN
+	1    2000 5650
 	1    0    0    1   
 $EndComp
 $Comp
-L device:R R18
+L esp32ValveControl-rescue:R-device R18
 U 1 1 5B81A891
-P 2000 5400
-F 0 "R18" V 2080 5400 50  0000 C CNN
-F 1 "10k" V 2000 5400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1930 5400 30  0001 C CNN
-F 3 "" H 2000 5400 30  0000 C CNN
-	1    2000 5400
+P 2000 6300
+F 0 "R18" V 2080 6300 50  0000 C CNN
+F 1 "10k" V 2000 6300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 1930 6300 30  0001 C CNN
+F 3 "" H 2000 6300 30  0000 C CNN
+	1    2000 6300
 	1    0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR016
+L esp32ValveControl-rescue:+3.3V-power #PWR016
 U 1 1 5B81A897
-P 2000 5250
-F 0 "#PWR016" H 2000 5100 50  0001 C CNN
-F 1 "+3.3V" H 2000 5390 50  0000 C CNN
-F 2 "" H 2000 5250 60  0000 C CNN
-F 3 "" H 2000 5250 60  0000 C CNN
-	1    2000 5250
+P 2000 6150
+F 0 "#PWR016" H 2000 6000 50  0001 C CNN
+F 1 "+3.3V" H 2000 6290 50  0000 C CNN
+F 2 "" H 2000 6150 60  0000 C CNN
+F 3 "" H 2000 6150 60  0000 C CNN
+	1    2000 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR017
+L esp32ValveControl-rescue:+3.3V-power #PWR017
 U 1 1 5B81A89D
-P 2000 4600
-F 0 "#PWR017" H 2000 4450 50  0001 C CNN
-F 1 "+3.3V" H 2000 4740 50  0000 C CNN
-F 2 "" H 2000 4600 60  0000 C CNN
-F 3 "" H 2000 4600 60  0000 C CNN
-	1    2000 4600
+P 2000 5500
+F 0 "#PWR017" H 2000 5350 50  0001 C CNN
+F 1 "+3.3V" H 2000 5640 50  0000 C CNN
+F 2 "" H 2000 5500 60  0000 C CNN
+F 3 "" H 2000 5500 60  0000 C CNN
+	1    2000 5500
 	1    0    0    -1  
 $EndComp
-Text Label 2100 4900 0    60   ~ 0
+Text Label 2100 5800 0    60   ~ 0
 OPTO3
-Text Label 2100 5550 0    60   ~ 0
+Text Label 2100 6450 0    60   ~ 0
 OPTO4
 Wire Wire Line
-	1900 5550 2000 5550
-Connection ~ 2000 5550
+	1900 6450 2000 6450
+Connection ~ 2000 6450
 Wire Wire Line
-	1900 4900 2000 4900
-Connection ~ 2000 4900
+	1900 5800 2000 5800
+Connection ~ 2000 5800
 $Comp
-L device:R R3
+L esp32ValveControl-rescue:R-device R3
 U 1 1 5B828A53
-P 1050 3300
-F 0 "R3" V 1130 3300 50  0000 C CNN
-F 1 "10k" V 1050 3300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 980 3300 30  0001 C CNN
-F 3 "" H 1050 3300 30  0000 C CNN
-	1    1050 3300
+P 1050 4200
+F 0 "R3" V 1130 4200 50  0000 C CNN
+F 1 "10k" V 1050 4200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 980 4200 30  0001 C CNN
+F 3 "" H 1050 4200 30  0000 C CNN
+	1    1050 4200
 	0    1    -1   0   
 $EndComp
 $Comp
-L device:R R4
+L esp32ValveControl-rescue:R-device R4
 U 1 1 5B828C11
-P 1050 3950
-F 0 "R4" V 1130 3950 50  0000 C CNN
-F 1 "10k" V 1050 3950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 980 3950 30  0001 C CNN
-F 3 "" H 1050 3950 30  0000 C CNN
-	1    1050 3950
+P 1050 4850
+F 0 "R4" V 1130 4850 50  0000 C CNN
+F 1 "10k" V 1050 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 980 4850 30  0001 C CNN
+F 3 "" H 1050 4850 30  0000 C CNN
+	1    1050 4850
 	0    1    -1   0   
 $EndComp
 $Comp
-L device:R R5
+L esp32ValveControl-rescue:R-device R5
 U 1 1 5B828CC1
-P 1050 4900
-F 0 "R5" V 1130 4900 50  0000 C CNN
-F 1 "10k" V 1050 4900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 980 4900 30  0001 C CNN
-F 3 "" H 1050 4900 30  0000 C CNN
-	1    1050 4900
+P 1050 5800
+F 0 "R5" V 1130 5800 50  0000 C CNN
+F 1 "10k" V 1050 5800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 980 5800 30  0001 C CNN
+F 3 "" H 1050 5800 30  0000 C CNN
+	1    1050 5800
 	0    1    -1   0   
 $EndComp
 $Comp
-L device:R R8
+L esp32ValveControl-rescue:R-device R8
 U 1 1 5B828D7F
-P 1050 5550
-F 0 "R8" V 1130 5550 50  0000 C CNN
-F 1 "10k" V 1050 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 980 5550 30  0001 C CNN
-F 3 "" H 1050 5550 30  0000 C CNN
-	1    1050 5550
+P 1050 6450
+F 0 "R8" V 1130 6450 50  0000 C CNN
+F 1 "10k" V 1050 6450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 980 6450 30  0001 C CNN
+F 3 "" H 1050 6450 30  0000 C CNN
+	1    1050 6450
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	1200 3300 1300 3300
+	1200 4200 1300 4200
 Wire Wire Line
-	1200 3950 1300 3950
+	1200 4850 1300 4850
 Wire Wire Line
-	1200 4900 1300 4900
+	1200 5800 1300 5800
 Wire Wire Line
-	1200 5550 1300 5550
+	1200 6450 1300 6450
 Wire Wire Line
-	550  5550 900  5550
+	550  6450 900  6450
 Wire Wire Line
-	550  4900 900  4900
+	550  5800 900  5800
 Wire Wire Line
-	550  3950 900  3950
+	550  4850 900  4850
 Wire Wire Line
-	550  3300 900  3300
+	550  4200 900  4200
 $Comp
-L power:VCOM #PWR018
+L esp32ValveControl-rescue:VCOM-power #PWR018
 U 1 1 5B84F319
-P 1200 3500
-F 0 "#PWR018" H 1200 3350 50  0001 C CNN
-F 1 "VCOM" V 1218 3628 50  0000 L CNN
-F 2 "" H 1200 3500 50  0000 C CNN
-F 3 "" H 1200 3500 50  0000 C CNN
-	1    1200 3500
+P 1200 4400
+F 0 "#PWR018" H 1200 4250 50  0001 C CNN
+F 1 "VCOM" V 1218 4528 50  0000 L CNN
+F 2 "" H 1200 4400 50  0000 C CNN
+F 3 "" H 1200 4400 50  0000 C CNN
+	1    1200 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCOM #PWR019
+L esp32ValveControl-rescue:VCOM-power #PWR019
 U 1 1 5B84F484
-P 1200 4150
-F 0 "#PWR019" H 1200 4000 50  0001 C CNN
-F 1 "VCOM" V 1218 4278 50  0000 L CNN
-F 2 "" H 1200 4150 50  0000 C CNN
-F 3 "" H 1200 4150 50  0000 C CNN
-	1    1200 4150
+P 1200 5050
+F 0 "#PWR019" H 1200 4900 50  0001 C CNN
+F 1 "VCOM" V 1218 5178 50  0000 L CNN
+F 2 "" H 1200 5050 50  0000 C CNN
+F 3 "" H 1200 5050 50  0000 C CNN
+	1    1200 5050
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCOM #PWR020
+L esp32ValveControl-rescue:VCOM-power #PWR020
 U 1 1 5B84F519
-P 1200 5100
-F 0 "#PWR020" H 1200 4950 50  0001 C CNN
-F 1 "VCOM" V 1218 5228 50  0000 L CNN
-F 2 "" H 1200 5100 50  0000 C CNN
-F 3 "" H 1200 5100 50  0000 C CNN
-	1    1200 5100
+P 1200 6000
+F 0 "#PWR020" H 1200 5850 50  0001 C CNN
+F 1 "VCOM" V 1218 6128 50  0000 L CNN
+F 2 "" H 1200 6000 50  0000 C CNN
+F 3 "" H 1200 6000 50  0000 C CNN
+	1    1200 6000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCOM #PWR021
+L esp32ValveControl-rescue:VCOM-power #PWR021
 U 1 1 5B84F5AE
-P 1200 5750
-F 0 "#PWR021" H 1200 5600 50  0001 C CNN
-F 1 "VCOM" V 1218 5878 50  0000 L CNN
-F 2 "" H 1200 5750 50  0000 C CNN
-F 3 "" H 1200 5750 50  0000 C CNN
-	1    1200 5750
+P 1200 6650
+F 0 "#PWR021" H 1200 6500 50  0001 C CNN
+F 1 "VCOM" V 1218 6778 50  0000 L CNN
+F 2 "" H 1200 6650 50  0000 C CNN
+F 3 "" H 1200 6650 50  0000 C CNN
+	1    1200 6650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCOM #PWR024
+L esp32ValveControl-rescue:VCOM-power #PWR024
 U 1 1 5B84F643
 P 6700 1650
 F 0 "#PWR024" H 6700 1500 50  0001 C CNN
@@ -1641,97 +1168,263 @@ F 3 "" H 6700 1650 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1200 3500 1300 3500
+	1200 4400 1300 4400
 Wire Wire Line
-	1200 4150 1300 4150
+	1200 5050 1300 5050
 Wire Wire Line
-	1200 5100 1300 5100
+	1200 6000 1300 6000
 Wire Wire Line
-	1200 5750 1300 5750
+	1200 6650 1300 6650
 Wire Wire Line
 	6150 1650 6700 1650
 Wire Wire Line
-	5950 4750 6300 4750
+	5950 5650 6300 5650
 Wire Wire Line
-	5950 4650 6300 4650
+	5950 5550 6300 5550
 Wire Wire Line
-	5950 4550 6300 4550
+	5950 5450 6300 5450
 Wire Wire Line
-	5950 4450 6300 4450
-Text Label 6050 4750 0    60   ~ 0
+	5950 5350 6300 5350
+Text Label 6050 5650 0    60   ~ 0
 CH1
-Text Label 6050 4650 0    60   ~ 0
+Text Label 6050 5550 0    60   ~ 0
 CH2
-Text Label 6050 4550 0    60   ~ 0
+Text Label 6050 5450 0    60   ~ 0
 CH3
-Text Label 6050 4450 0    60   ~ 0
+Text Label 6050 5350 0    60   ~ 0
 CH4
 $Comp
 L Isolator:LTV-354T U5
 U 1 1 5B84B6D3
-P 1600 3400
-F 0 "U5" H 1600 3725 50  0000 C CNN
-F 1 "LTV-354T" H 1600 3634 50  0000 C CNN
-F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 3200 50  0001 L CIN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 3400 50  0001 L CNN
-	1    1600 3400
+P 1600 4300
+F 0 "U5" H 1600 4625 50  0000 C CNN
+F 1 "LTV-354T" H 1600 4534 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 4100 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 4300 50  0001 L CNN
+	1    1600 4300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Isolator:LTV-354T U8
 U 1 1 5B84BAAD
-P 1600 4050
-F 0 "U8" H 1600 4375 50  0000 C CNN
-F 1 "LTV-354T" H 1600 4284 50  0000 C CNN
-F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 3850 50  0001 L CIN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 4050 50  0001 L CNN
-	1    1600 4050
+P 1600 4950
+F 0 "U8" H 1600 5275 50  0000 C CNN
+F 1 "LTV-354T" H 1600 5184 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 4750 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 4950 50  0001 L CNN
+	1    1600 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Isolator:LTV-354T U9
 U 1 1 5B84BB59
-P 1600 5000
-F 0 "U9" H 1600 5325 50  0000 C CNN
-F 1 "LTV-354T" H 1600 5234 50  0000 C CNN
-F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 4800 50  0001 L CIN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 5000 50  0001 L CNN
-	1    1600 5000
+P 1600 5900
+F 0 "U9" H 1600 6225 50  0000 C CNN
+F 1 "LTV-354T" H 1600 6134 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 5700 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 5900 50  0001 L CNN
+	1    1600 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Isolator:LTV-354T U10
 U 1 1 5B84BC17
-P 1600 5650
-F 0 "U10" H 1600 5975 50  0000 C CNN
-F 1 "LTV-354T" H 1600 5884 50  0000 C CNN
-F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 5450 50  0001 L CIN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 5650 50  0001 L CNN
-	1    1600 5650
+P 1600 6550
+F 0 "U10" H 1600 6875 50  0000 C CNN
+F 1 "LTV-354T" H 1600 6784 50  0000 C CNN
+F 2 "SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm" H 1400 6350 50  0001 L CIN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS70-2001-004/S_110_LTV-354T%2020140520.pdf" H 1625 6550 50  0001 L CNN
+	1    1600 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 4300 2800 4300
+	4100 5200 2800 5200
 Wire Wire Line
-	2800 4300 2800 5550
+	2800 5200 2800 6450
 Wire Wire Line
-	2000 5550 2800 5550
+	2000 6450 2800 6450
 Wire Wire Line
-	2900 4900 2900 4400
+	2900 5800 2900 5300
 Wire Wire Line
-	2900 4400 4100 4400
+	2900 5300 4100 5300
 Wire Wire Line
-	2000 4900 2900 4900
+	2000 5800 2900 5800
 Wire Wire Line
-	4100 5000 3000 5000
+	4100 5900 3000 5900
 Wire Wire Line
-	3000 5000 3000 3950
+	3000 5900 3000 4850
 Wire Wire Line
-	2000 3950 3000 3950
+	2000 4850 3000 4850
 Wire Wire Line
-	4100 5100 3100 5100
+	4100 6000 3100 6000
 Wire Wire Line
-	3100 5100 3100 3300
+	3100 6000 3100 4200
 Wire Wire Line
-	2000 3300 3100 3300
+	2000 4200 3100 4200
+$Sheet
+S 1550 800  700  400 
+U 5C171864
+F0 "dig_output" 39
+F1 "dig_output.sch" 39
+F2 "VDD" I L 1550 900 60 
+F3 "Vin" I R 2250 900 60 
+F4 "nIn" I L 1550 1000 60 
+F5 "Out" O R 2250 1000 60 
+F6 "GND" I L 1550 1100 60 
+$EndSheet
+$Comp
+L esp32ValveControl-rescue:+3.3V-power #PWR0101
+U 1 1 5C191DF2
+P 1250 900
+F 0 "#PWR0101" H 1250 750 50  0001 C CNN
+F 1 "+3.3V" H 1250 1040 50  0000 C CNN
+F 2 "" H 1250 900 60  0000 C CNN
+F 3 "" H 1250 900 60  0000 C CNN
+	1    1250 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 900  1250 900 
+Wire Wire Line
+	2250 900  2400 900 
+Text Label 1350 1000 2    60   ~ 0
+CH1
+Text Label 1350 1600 2    60   ~ 0
+CH2
+Text Label 1350 2200 2    60   ~ 0
+CH3
+Text Label 1350 2800 2    60   ~ 0
+CH4
+Text Label 2650 900  2    60   ~ 0
+Vin
+Text Label 2650 1000 2    60   ~ 0
+OUT1
+Text Label 2650 1600 2    60   ~ 0
+OUT2
+Text Label 2650 2200 2    60   ~ 0
+OUT3
+Text Label 2650 2800 2    60   ~ 0
+OUT4
+Wire Wire Line
+	1550 1000 1350 1000
+Wire Wire Line
+	2250 1000 2650 1000
+$Sheet
+S 1550 1400 700  400 
+U 5C1F3716
+F0 "sheet5C1F370F" 39
+F1 "dig_output.sch" 39
+F2 "VDD" I L 1550 1500 60 
+F3 "Vin" I R 2250 1500 60 
+F4 "nIn" I L 1550 1600 60 
+F5 "Out" O R 2250 1600 60 
+F6 "GND" I L 1550 1700 60 
+$EndSheet
+Wire Wire Line
+	1550 1500 1250 1500
+Wire Wire Line
+	1550 1600 1350 1600
+Wire Wire Line
+	2250 1600 2650 1600
+$Sheet
+S 1550 2000 700  400 
+U 5C1F9DEA
+F0 "sheet5C1F9DE2" 39
+F1 "dig_output.sch" 39
+F2 "VDD" I L 1550 2100 60 
+F3 "Vin" I R 2250 2100 60 
+F4 "nIn" I L 1550 2200 60 
+F5 "Out" O R 2250 2200 60 
+F6 "GND" I L 1550 2300 60 
+$EndSheet
+Wire Wire Line
+	1550 2100 1250 2100
+Wire Wire Line
+	1550 2200 1350 2200
+Wire Wire Line
+	2250 2200 2650 2200
+$Sheet
+S 1550 2600 700  400 
+U 5C1F9DF5
+F0 "sheet5C1F9DE3" 39
+F1 "dig_output.sch" 39
+F2 "VDD" I L 1550 2700 60 
+F3 "Vin" I R 2250 2700 60 
+F4 "nIn" I L 1550 2800 60 
+F5 "Out" O R 2250 2800 60 
+F6 "GND" I L 1550 2900 60 
+$EndSheet
+Wire Wire Line
+	1550 2700 1250 2700
+Wire Wire Line
+	1550 2800 1350 2800
+Wire Wire Line
+	2250 2800 2650 2800
+Connection ~ 8100 4750
+Connection ~ 8100 5050
+Connection ~ 9100 5900
+Wire Wire Line
+	1250 900  1250 1500
+Connection ~ 1250 900 
+Wire Wire Line
+	1250 1500 1250 2100
+Connection ~ 1250 1500
+Wire Wire Line
+	1250 2100 1250 2700
+Connection ~ 1250 2100
+$Comp
+L esp32ValveControl-rescue:GND-power #PWR0102
+U 1 1 5C23DE22
+P 1450 3050
+F 0 "#PWR0102" H 1450 2800 50  0001 C CNN
+F 1 "GND" H 1450 2900 50  0000 C CNN
+F 2 "" H 1450 3050 60  0000 C CNN
+F 3 "" H 1450 3050 60  0000 C CNN
+	1    1450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2900 1450 2900
+Wire Wire Line
+	1450 2900 1450 3050
+Wire Wire Line
+	1550 2300 1450 2300
+Wire Wire Line
+	1450 2300 1450 2900
+Connection ~ 1450 2900
+Wire Wire Line
+	1550 1700 1450 1700
+Wire Wire Line
+	1450 1700 1450 2300
+Connection ~ 1450 2300
+Wire Wire Line
+	1550 1100 1450 1100
+Wire Wire Line
+	1450 1100 1450 1700
+Connection ~ 1450 1700
+Wire Wire Line
+	2250 1500 2400 1500
+Wire Wire Line
+	2400 1500 2400 900 
+Connection ~ 2400 900 
+Wire Wire Line
+	2400 900  2600 900 
+Wire Wire Line
+	2250 2100 2400 2100
+Wire Wire Line
+	2400 2100 2400 1500
+Connection ~ 2400 1500
+Wire Wire Line
+	2250 2700 2400 2700
+Wire Wire Line
+	2400 2700 2400 2100
+Connection ~ 2400 2100
+Wire Wire Line
+	4350 850  4350 1050
+Wire Wire Line
+	4350 1050 4350 1250
+Wire Wire Line
+	4350 1250 4350 1450
+Wire Wire Line
+	4350 1450 4350 1650
 $EndSCHEMATC

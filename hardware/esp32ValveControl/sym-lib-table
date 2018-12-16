@@ -41,4 +41,6 @@
   (lib (name oled_096_27pin)(type Legacy)(uri /home/marco/git/kicad/components/oled_096_27pin.lib)(options "")(descr ""))
   (lib (name ESP32-footprints-Shem-Lib)(type Legacy)(uri /home/marco/git/kicad-lib/components/ESP32-footprints-Shem-Lib.lib)(options "")(descr ""))
   (lib (name aqy212)(type Legacy)(uri ${KIPRJMOD}/lib/aqy212.lib)(options "")(descr ""))
+  (lib (name esp32ValveControl-rescue)(type Legacy)(uri ${KIPRJMOD}/esp32ValveControl-rescue.lib)(options "")(descr ""))
+  (lib (name Package_TO_SOT_SMD)(type Legacy)(uri /home/marco/kicad/libs/Package_TO_SOT_SMD.pretty)(options "")(descr ""))
 )

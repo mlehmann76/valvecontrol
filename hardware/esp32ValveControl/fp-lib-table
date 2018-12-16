@@ -9,4 +9,5 @@
   (lib (name switches)(type KiCad)(uri /home/marco/git/kicad/footprints/switches.pretty)(options "")(descr ""))
   (lib (name cb_hut)(type KiCad)(uri /home/marco/git/kicad/footprints/cb_hut.pretty)(options "")(descr ""))
   (lib (name ESP32-footprints-Lib)(type KiCad)(uri /home/marco/git/kicad-lib/footprints/ESP32-footprints-Lib.pretty)(options "")(descr ""))
+  (lib (name Package_TO_SOT_SMD)(type KiCad)(uri /home/marco/kicad/libs/Package_TO_SOT_SMD.pretty)(options "")(descr ""))
 )
