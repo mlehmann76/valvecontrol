@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name connectors_rf)(type KiCad)(uri /home/marco/git/kicad/footprints/connectors_rf.pretty)(options "")(descr ""))
+  (lib (name oscillator)(type KiCad)(uri /home/marco/git/kicad/footprints/oscillator.pretty)(options "")(descr ""))
+  (lib (name RPiHat)(type KiCad)(uri /home/marco/git/kicad/footprints/RPiHat.pretty)(options "")(descr ""))
+  (lib (name smd_packages)(type KiCad)(uri /home/marco/git/kicad/footprints/smd_packages.pretty)(options "")(descr ""))
+  (lib (name sockets_akl)(type KiCad)(uri /home/marco/git/kicad/footprints/sockets_akl.pretty)(options "")(descr ""))
+  (lib (name sockets_dc)(type KiCad)(uri /home/marco/git/kicad/footprints/sockets_dc.pretty)(options "")(descr ""))
+  (lib (name sockets_usb)(type KiCad)(uri /home/marco/git/kicad/footprints/sockets_usb.pretty)(options "")(descr ""))
+  (lib (name switches)(type KiCad)(uri /home/marco/git/kicad/footprints/switches.pretty)(options "")(descr ""))
+  (lib (name cb_hut)(type KiCad)(uri /home/marco/git/kicad/footprints/cb_hut.pretty)(options "")(descr ""))
+  (lib (name ESP32-footprints-Lib)(type KiCad)(uri /home/marco/git/kicad-lib/footprints/ESP32-footprints-Lib.pretty)(options "")(descr ""))
+  (lib (name Package_TO_SOT_SMD)(type KiCad)(uri /home/marco/kicad/libs/Package_TO_SOT_SMD.pretty)(options "")(descr ""))
+)

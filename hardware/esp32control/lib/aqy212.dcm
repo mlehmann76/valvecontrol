@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AQY212
+D DIP4, MOSFET Photorelay 1-Form-A, Voff 60V, Ion 0,5A
+K MOSFET Output Photorelay 1-Form-A
+$ENDCMP
+#
+#End Doc Library
