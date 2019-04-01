@@ -17,80 +17,80 @@ $EndDescr
 $Comp
 L standard:Switch_4P SW2
 U 1 1 55A6DAD5
-P 9450 5850
-F 0 "SW2" H 9450 5740 60  0000 C CNN
-F 1 "Reset" H 9470 5990 60  0000 C CNN
-F 2 "switches:SMD_Switch_6.5x6" H 9450 5850 60  0001 C CNN
-F 3 "" H 9450 5850 60  0000 C CNN
-	1    9450 5850
+P 9450 6000
+F 0 "SW2" H 9450 5890 60  0000 C CNN
+F 1 "Reset" H 9470 6140 60  0000 C CNN
+F 2 "switches:SMD_Switch_6.5x6" H 9450 6000 60  0001 C CNN
+F 3 "" H 9450 6000 60  0000 C CNN
+	1    9450 6000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L esp32control-rescue:R-device-esp32ValveControl-rescue R11
 U 1 1 55A6DADB
-P 9650 6050
-F 0 "R11" V 9730 6050 50  0000 C CNN
-F 1 "100" V 9650 6050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9580 6050 30  0001 C CNN
-F 3 "" H 9650 6050 30  0000 C CNN
-	1    9650 6050
+P 9650 6200
+F 0 "R11" V 9730 6200 50  0000 C CNN
+F 1 "100" V 9650 6200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9580 6200 30  0001 C CNN
+F 3 "" H 9650 6200 30  0000 C CNN
+	1    9650 6200
 	-1   0    0    -1  
 $EndComp
 $Comp
 L esp32control-rescue:C_Small-device-esp32ValveControl-rescue C23
 U 1 1 55A6DCA5
-P 9250 6000
-F 0 "C23" H 9260 6070 50  0000 L CNN
-F 1 "100n" H 9260 5920 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 9250 6000 60  0001 C CNN
-F 3 "" H 9250 6000 60  0000 C CNN
-	1    9250 6000
+P 9250 6150
+F 0 "C23" H 9260 6220 50  0000 L CNN
+F 1 "1u" H 9260 6070 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9250 6150 60  0001 C CNN
+F 3 "" H 9250 6150 60  0000 C CNN
+	1    9250 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR022
 U 1 1 55A6DDB1
-P 9250 6100
-F 0 "#PWR022" H 9250 5850 50  0001 C CNN
-F 1 "GND" H 9250 5950 50  0000 C CNN
-F 2 "" H 9250 6100 60  0000 C CNN
-F 3 "" H 9250 6100 60  0000 C CNN
-	1    9250 6100
+P 9250 6250
+F 0 "#PWR022" H 9250 6000 50  0001 C CNN
+F 1 "GND" H 9250 6100 50  0000 C CNN
+F 2 "" H 9250 6250 60  0000 C CNN
+F 3 "" H 9250 6250 60  0000 C CNN
+	1    9250 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR023
 U 1 1 55A6E003
-P 9650 6200
-F 0 "#PWR023" H 9650 5950 50  0001 C CNN
-F 1 "GND" H 9650 6050 50  0000 C CNN
-F 2 "" H 9650 6200 60  0000 C CNN
-F 3 "" H 9650 6200 60  0000 C CNN
-	1    9650 6200
+P 9650 6350
+F 0 "#PWR023" H 9650 6100 50  0001 C CNN
+F 1 "GND" H 9650 6200 50  0000 C CNN
+F 2 "" H 9650 6350 60  0000 C CNN
+F 3 "" H 9650 6350 60  0000 C CNN
+	1    9650 6350
 	1    0    0    -1  
 $EndComp
-Text Label 8650 5900 0    60   ~ 0
+Text Label 8650 6050 0    60   ~ 0
 nReset
 $Comp
 L esp32control-rescue:R-device-esp32ValveControl-rescue R10
 U 1 1 568D341F
-P 9100 5650
-F 0 "R10" V 9180 5650 50  0000 C CNN
-F 1 "10k" V 9100 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9030 5650 30  0001 C CNN
-F 3 "" H 9100 5650 30  0000 C CNN
-	1    9100 5650
+P 9100 5800
+F 0 "R10" V 9180 5800 50  0000 C CNN
+F 1 "10k" V 9100 5800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9030 5800 30  0001 C CNN
+F 3 "" H 9100 5800 30  0000 C CNN
+	1    9100 5800
 	1    0    0    1   
 $EndComp
 $Comp
 L esp32control-rescue:+3.3V-power-esp32ValveControl-rescue #PWR030
 U 1 1 568D47D8
-P 9100 5450
-F 0 "#PWR030" H 9100 5300 50  0001 C CNN
-F 1 "+3.3V" H 9100 5590 50  0000 C CNN
-F 2 "" H 9100 5450 60  0000 C CNN
-F 3 "" H 9100 5450 60  0000 C CNN
-	1    9100 5450
+P 9100 5600
+F 0 "#PWR030" H 9100 5450 50  0001 C CNN
+F 1 "+3.3V" H 9100 5740 50  0000 C CNN
+F 2 "" H 9100 5600 60  0000 C CNN
+F 3 "" H 9100 5600 60  0000 C CNN
+	1    9100 5600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -349,7 +349,7 @@ OPTO1
 Text Label 3000 4850 0    60   ~ 0
 OPTO2
 Wire Wire Line
-	9100 5800 9100 5900
+	9100 5950 9100 6050
 Wire Wire Line
 	10600 1400 10800 1400
 Connection ~ 10800 1400
@@ -358,7 +358,7 @@ Connection ~ 8650 1000
 Connection ~ 8300 1000
 Connection ~ 10600 1400
 Wire Wire Line
-	9100 5450 9100 5500
+	9100 5600 9100 5650
 Wire Wire Line
 	2800 4850 2900 4850
 Connection ~ 2900 4850
@@ -385,10 +385,10 @@ Wire Wire Line
 	2800 4200 2900 4200
 Connection ~ 2900 4200
 Wire Wire Line
-	8650 5900 9100 5900
-Connection ~ 9250 5900
+	8650 6050 9100 6050
+Connection ~ 9250 6050
 Wire Wire Line
-	9100 5900 9250 5900
+	9100 6050 9250 6050
 Wire Wire Line
 	4950 1400 5400 1400
 Wire Wire Line
@@ -418,11 +418,11 @@ Wire Wire Line
 	5400 1300 4350 1300
 Wire Wire Line
 	5400 2100 4350 2100
-Connection ~ 9650 5900
+Connection ~ 9650 6050
 Wire Wire Line
-	9250 5900 9250 5800
+	9250 6050 9250 5950
 Wire Wire Line
-	9650 5900 9650 5800
+	9650 6050 9650 5950
 $Comp
 L standard:Switch_4P SW1
 U 1 1 5B7CF122
@@ -444,28 +444,6 @@ F 2 "Resistors_SMD:R_0603" V 10880 6050 30  0001 C CNN
 F 3 "" H 10950 6050 30  0000 C CNN
 	1    10950 6050
 	-1   0    0    -1  
-$EndComp
-$Comp
-L esp32control-rescue:C_Small-device-esp32ValveControl-rescue C1
-U 1 1 5B7CF12E
-P 10550 6000
-F 0 "C1" H 10560 6070 50  0000 L CNN
-F 1 "100n" H 10560 5920 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 10550 6000 60  0001 C CNN
-F 3 "" H 10550 6000 60  0000 C CNN
-	1    10550 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR05
-U 1 1 5B7CF134
-P 10550 6100
-F 0 "#PWR05" H 10550 5850 50  0001 C CNN
-F 1 "GND" H 10550 5950 50  0000 C CNN
-F 2 "" H 10550 6100 60  0000 C CNN
-F 3 "" H 10550 6100 60  0000 C CNN
-	1    10550 6100
-	1    0    0    -1  
 $EndComp
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR06
@@ -517,48 +495,10 @@ Wire Wire Line
 	10550 5900 10550 5800
 Wire Wire Line
 	10950 5900 10950 5800
-Text Label 7400 5250 0    60   ~ 0
-nBoot
-$Comp
-L esp32control-rescue:CONN_01X05-conn-esp32ValveControl-rescue P1
-U 1 1 5B7DA8BB
-P 8050 5150
-F 0 "P1" H 8128 5191 50  0000 L CNN
-F 1 "CONN_01X05" H 8128 5100 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 8050 5150 50  0001 C CNN
-F 3 "" H 8050 5150 50  0000 C CNN
-	1    8050 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6850 5250 7850 5250
+	7200 4250 6850 4250
 Wire Wire Line
-	7850 5150 7350 5150
-Text Label 7400 5150 0    60   ~ 0
-nReset
-Wire Wire Line
-	7850 4950 7750 4950
-Wire Wire Line
-	7750 4950 7750 4250
-Wire Wire Line
-	7750 4250 6850 4250
-Wire Wire Line
-	6850 4350 7650 4350
-Wire Wire Line
-	7650 4350 7650 5050
-Wire Wire Line
-	7650 5050 7850 5050
-$Comp
-L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR08
-U 1 1 5B7E81D9
-P 7850 5350
-F 0 "#PWR08" H 7850 5100 50  0001 C CNN
-F 1 "GND" H 7850 5200 50  0000 C CNN
-F 2 "" H 7850 5350 60  0000 C CNN
-F 3 "" H 7850 5350 60  0000 C CNN
-	1    7850 5350
-	1    0    0    -1  
-$EndComp
+	6850 4350 7200 4350
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR09
 U 1 1 5B7E85C5
@@ -620,7 +560,7 @@ F 3 "" H 4700 4300 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5000 4300 4850 4300
+	5000 4300 4900 4300
 Wire Wire Line
 	4550 4300 4500 4300
 Wire Wire Line
@@ -715,7 +655,7 @@ L esp32control-rescue:R-device-esp32ValveControl-rescue R3
 U 1 1 5B828A53
 P 1950 4200
 F 0 "R3" V 2030 4200 50  0000 C CNN
-F 1 "10k" V 1950 4200 50  0000 C CNN
+F 1 "1k5" V 1950 4200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1880 4200 30  0001 C CNN
 F 3 "" H 1950 4200 30  0000 C CNN
 	1    1950 4200
@@ -726,7 +666,7 @@ L esp32control-rescue:R-device-esp32ValveControl-rescue R4
 U 1 1 5B828C11
 P 1950 4850
 F 0 "R4" V 2030 4850 50  0000 C CNN
-F 1 "10k" V 1950 4850 50  0000 C CNN
+F 1 "1k5" V 1950 4850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1880 4850 30  0001 C CNN
 F 3 "" H 1950 4850 30  0000 C CNN
 	1    1950 4850
@@ -737,7 +677,7 @@ L esp32control-rescue:R-device-esp32ValveControl-rescue R5
 U 1 1 5B828CC1
 P 1950 5800
 F 0 "R5" V 2030 5800 50  0000 C CNN
-F 1 "10k" V 1950 5800 50  0000 C CNN
+F 1 "1k5" V 1950 5800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1880 5800 30  0001 C CNN
 F 3 "" H 1950 5800 30  0000 C CNN
 	1    1950 5800
@@ -748,7 +688,7 @@ L esp32control-rescue:R-device-esp32ValveControl-rescue R8
 U 1 1 5B828D7F
 P 1950 6450
 F 0 "R8" V 2030 6450 50  0000 C CNN
-F 1 "10k" V 1950 6450 50  0000 C CNN
+F 1 "1k5" V 1950 6450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1880 6450 30  0001 C CNN
 F 3 "" H 1950 6450 30  0000 C CNN
 	1    1950 6450
@@ -908,17 +848,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 5800 3800 5800
 Wire Wire Line
-	5000 5300 3900 5300
-Wire Wire Line
-	3900 5300 3900 4850
-Wire Wire Line
 	2900 4850 3900 4850
-Wire Wire Line
-	5000 5400 4000 5400
-Wire Wire Line
-	4000 5400 4000 4200
-Wire Wire Line
-	2900 4200 4000 4200
 $Sheet
 S 1550 800  700  400 
 U 5C171864
@@ -1022,7 +952,7 @@ Wire Wire Line
 	1550 2800 1350 2800
 Wire Wire Line
 	2250 2800 2650 2800
-Connection ~ 9100 5900
+Connection ~ 9100 6050
 Wire Wire Line
 	1250 900  1250 1500
 Connection ~ 1250 900 
@@ -1552,35 +1482,22 @@ $EndComp
 Wire Wire Line
 	9400 1950 10150 1950
 Connection ~ 10150 1950
-$Comp
-L Connector_Generic:Conn_02x07_Odd_Even J1
-U 1 1 5C25D146
-P 9300 3900
-F 0 "J1" H 9350 4417 50  0000 C CNN
-F 1 "Conn_02x07_Odd_Even" H 9350 4326 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 9300 3900 50  0001 C CNN
-F 3 "~" H 9300 3900 50  0001 C CNN
-	1    9300 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 3600 8750 3600
 Wire Wire Line
 	9400 1950 8750 1950
 Wire Wire Line
-	8750 1950 8750 3600
+	8750 1950 8750 3000
 Connection ~ 9400 1950
 Wire Wire Line
-	9600 4200 9600 4400
+	9600 3800 9600 4000
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR0107
 U 1 1 5C27C940
-P 9600 4400
-F 0 "#PWR0107" H 9600 4150 50  0001 C CNN
-F 1 "GND" H 9600 4250 50  0000 C CNN
-F 2 "" H 9600 4400 60  0000 C CNN
-F 3 "" H 9600 4400 60  0000 C CNN
-	1    9600 4400
+P 9600 4000
+F 0 "#PWR0107" H 9600 3750 50  0001 C CNN
+F 1 "GND" H 9600 3850 50  0000 C CNN
+F 2 "" H 9600 4000 60  0000 C CNN
+F 3 "" H 9600 4000 60  0000 C CNN
+	1    9600 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1595,10 +1512,6 @@ Wire Wire Line
 	5000 4400 4500 4400
 Wire Wire Line
 	5000 4500 4500 4500
-Wire Wire Line
-	5000 4800 4500 4800
-Wire Wire Line
-	5000 4900 4500 4900
 Wire Wire Line
 	5000 5000 4500 5000
 Wire Wire Line
@@ -1620,40 +1533,40 @@ IO26
 Text Label 4550 5200 0    60   ~ 0
 IO27
 Wire Wire Line
+	9600 3200 10000 3200
+Wire Wire Line
+	9100 3300 8750 3300
+Text Label 9750 3200 0    60   ~ 0
+IO36
+Text Label 8750 3300 0    60   ~ 0
+IO39
+Wire Wire Line
+	9600 3300 10000 3300
+Wire Wire Line
+	9100 3400 8750 3400
+Text Label 9750 3300 0    60   ~ 0
+IO32
+Text Label 8750 3400 0    60   ~ 0
+IO33
+Wire Wire Line
+	9600 3400 10000 3400
+Wire Wire Line
+	9100 3500 8750 3500
+Wire Wire Line
+	9600 3500 10000 3500
+Wire Wire Line
+	9100 3600 8750 3600
+Wire Wire Line
 	9600 3600 10000 3600
 Wire Wire Line
 	9100 3700 8750 3700
-Text Label 9750 3600 0    60   ~ 0
-IO36
-Text Label 8750 3700 0    60   ~ 0
-IO39
 Wire Wire Line
 	9600 3700 10000 3700
-Wire Wire Line
-	9100 3800 8750 3800
-Text Label 9750 3700 0    60   ~ 0
-IO32
-Text Label 8750 3800 0    60   ~ 0
-IO33
-Wire Wire Line
-	9600 3800 10000 3800
-Wire Wire Line
-	9100 3900 8750 3900
-Wire Wire Line
-	9600 3900 10000 3900
-Wire Wire Line
-	9100 4000 8750 4000
-Wire Wire Line
-	9600 4000 10000 4000
-Wire Wire Line
-	9100 4100 8750 4100
-Wire Wire Line
-	9600 4100 10000 4100
-Text Label 9750 3800 0    60   ~ 0
+Text Label 9750 3400 0    60   ~ 0
 IO25
-Text Label 9750 3900 0    60   ~ 0
+Text Label 9750 3500 0    60   ~ 0
 IO27
-Text Label 8750 3900 0    60   ~ 0
+Text Label 8750 3500 0    60   ~ 0
 IO26
 Wire Wire Line
 	6850 5150 7200 5150
@@ -1663,27 +1576,27 @@ Text Label 6950 4850 0    60   ~ 0
 IO5
 Text Label 6950 5150 0    60   ~ 0
 IO4
-Text Label 9750 4100 0    60   ~ 0
+Text Label 9750 3700 0    60   ~ 0
 SDA
-Text Label 8750 4100 0    60   ~ 0
+Text Label 8750 3700 0    60   ~ 0
 SCL
-Text Label 9750 4000 0    60   ~ 0
+Text Label 9750 3600 0    60   ~ 0
 IO5
-Text Label 8750 4000 0    60   ~ 0
+Text Label 8750 3600 0    60   ~ 0
 IO4
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR0108
 U 1 1 5C3B9271
-P 9100 4400
-F 0 "#PWR0108" H 9100 4150 50  0001 C CNN
-F 1 "GND" H 9100 4250 50  0000 C CNN
-F 2 "" H 9100 4400 60  0000 C CNN
-F 3 "" H 9100 4400 60  0000 C CNN
-	1    9100 4400
+P 9100 4000
+F 0 "#PWR0108" H 9100 3750 50  0001 C CNN
+F 1 "GND" H 9100 3850 50  0000 C CNN
+F 2 "" H 9100 4000 60  0000 C CNN
+F 3 "" H 9100 4000 60  0000 C CNN
+	1    9100 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 4200 9100 4400
+	9100 3800 9100 4000
 Wire Wire Line
 	6150 1300 6750 1300
 Wire Wire Line
@@ -1715,4 +1628,138 @@ Text Label 2500 3150 0    50   ~ 0
 GNDA
 Text Label 4350 1300 0    50   ~ 0
 GNDA
+Wire Wire Line
+	4900 4300 4900 3850
+Wire Wire Line
+	4900 3850 4200 3850
+Connection ~ 4900 4300
+Wire Wire Line
+	4900 4300 4850 4300
+Text Label 4250 3850 0    50   ~ 0
+nReset
+Wire Wire Line
+	4150 4200 4150 4900
+Wire Wire Line
+	2900 4200 4150 4200
+Wire Wire Line
+	4150 4900 5000 4900
+Wire Wire Line
+	3900 4800 3900 4850
+Wire Wire Line
+	3900 4800 5000 4800
+$Comp
+L Transistor_BJT:MMBT3904 Q7
+U 1 1 5C801DA6
+P 9600 4500
+F 0 "Q7" H 9790 4546 50  0000 L CNN
+F 1 "MMBT3904" H 9790 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 4425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9600 4500 50  0001 L CNN
+	1    9600 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q8
+U 1 1 5C82A159
+P 9600 5100
+F 0 "Q8" H 9790 5054 50  0000 L CNN
+F 1 "MMBT3904" H 9790 5145 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9600 5100 50  0001 L CNN
+	1    9600 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L esp32control-rescue:R-device-esp32ValveControl-rescue R20
+U 1 1 5C844C48
+P 10150 4500
+F 0 "R20" V 10230 4500 50  0000 C CNN
+F 1 "10k" V 10150 4500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10080 4500 30  0001 C CNN
+F 3 "" H 10150 4500 30  0000 C CNN
+	1    10150 4500
+	0    1    -1   0   
+$EndComp
+$Comp
+L esp32control-rescue:R-device-esp32ValveControl-rescue R21
+U 1 1 5C844D35
+P 10150 5100
+F 0 "R21" V 10230 5100 50  0000 C CNN
+F 1 "10k" V 10150 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 10080 5100 30  0001 C CNN
+F 3 "" H 10150 5100 30  0000 C CNN
+	1    10150 5100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9500 4300 8750 4300
+Text Label 8750 4300 0    50   ~ 0
+nBoot
+Wire Wire Line
+	9500 5300 9500 5350
+Wire Wire Line
+	9500 5350 8800 5350
+Text Label 8800 5350 0    50   ~ 0
+nReset
+Wire Wire Line
+	9500 4900 10400 4900
+Wire Wire Line
+	10400 4900 10400 4500
+Wire Wire Line
+	10400 4500 10300 4500
+Wire Wire Line
+	9500 4700 10300 4700
+Wire Wire Line
+	10300 4700 10300 5100
+Wire Wire Line
+	9800 5100 10000 5100
+Wire Wire Line
+	9800 4500 10000 4500
+Wire Wire Line
+	10400 4500 10700 4500
+Connection ~ 10400 4500
+Text Label 10700 4500 0    50   ~ 0
+RTS
+Wire Wire Line
+	10300 5100 10750 5100
+Connection ~ 10300 5100
+Text Label 10750 5100 0    50   ~ 0
+DTR
+Wire Wire Line
+	6850 5250 7200 5250
+Text Label 6950 5250 0    50   ~ 0
+nBoot
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J1
+U 1 1 5CA34F1C
+P 9300 3400
+F 0 "J1" H 9350 4017 50  0000 C CNN
+F 1 "Conn_02x09_Odd_Even" H 9350 3926 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x09_Pitch2.54mm" H 9300 3400 50  0001 C CNN
+F 3 "~" H 9300 3400 50  0001 C CNN
+	1    9300 3400
+	1    0    0    -1  
+$EndComp
+Text Label 6950 4250 0    50   ~ 0
+TXD0
+Text Label 6950 4350 0    50   ~ 0
+RXD0
+Wire Wire Line
+	9100 3000 8750 3000
+Wire Wire Line
+	9100 3200 8750 3200
+Wire Wire Line
+	9600 3100 10000 3100
+Wire Wire Line
+	9100 3100 8750 3100
+Wire Wire Line
+	9600 3000 10000 3000
+Text Label 9750 3000 0    50   ~ 0
+TXD0
+Text Label 8750 3100 0    50   ~ 0
+RXD0
+Text Label 9750 3100 0    50   ~ 0
+RTS
+Text Label 8750 3200 0    50   ~ 0
+DTS
 $EndSCHEMATC
