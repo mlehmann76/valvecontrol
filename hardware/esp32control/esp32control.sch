@@ -1488,16 +1488,16 @@ Wire Wire Line
 	8750 1950 8750 3000
 Connection ~ 9400 1950
 Wire Wire Line
-	9600 3800 9600 4000
+	9600 3900 9600 4100
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR0107
 U 1 1 5C27C940
-P 9600 4000
-F 0 "#PWR0107" H 9600 3750 50  0001 C CNN
-F 1 "GND" H 9600 3850 50  0000 C CNN
-F 2 "" H 9600 4000 60  0000 C CNN
-F 3 "" H 9600 4000 60  0000 C CNN
-	1    9600 4000
+P 9600 4100
+F 0 "#PWR0107" H 9600 3850 50  0001 C CNN
+F 1 "GND" H 9600 3950 50  0000 C CNN
+F 2 "" H 9600 4100 60  0000 C CNN
+F 3 "" H 9600 4100 60  0000 C CNN
+	1    9600 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1558,10 +1558,6 @@ Wire Wire Line
 	9100 3600 8750 3600
 Wire Wire Line
 	9600 3600 10000 3600
-Wire Wire Line
-	9100 3700 8750 3700
-Wire Wire Line
-	9600 3700 10000 3700
 Text Label 9750 3400 0    60   ~ 0
 IO25
 Text Label 9750 3500 0    60   ~ 0
@@ -1576,27 +1572,23 @@ Text Label 6950 4850 0    60   ~ 0
 IO5
 Text Label 6950 5150 0    60   ~ 0
 IO4
-Text Label 9750 3700 0    60   ~ 0
-SDA
-Text Label 8750 3700 0    60   ~ 0
-SCL
 Text Label 9750 3600 0    60   ~ 0
-IO5
+SDA
 Text Label 8750 3600 0    60   ~ 0
-IO4
+SCL
 $Comp
 L esp32control-rescue:GND-power-esp32ValveControl-rescue #PWR0108
 U 1 1 5C3B9271
-P 9100 4000
-F 0 "#PWR0108" H 9100 3750 50  0001 C CNN
-F 1 "GND" H 9100 3850 50  0000 C CNN
-F 2 "" H 9100 4000 60  0000 C CNN
-F 3 "" H 9100 4000 60  0000 C CNN
-	1    9100 4000
+P 9100 4100
+F 0 "#PWR0108" H 9100 3850 50  0001 C CNN
+F 1 "GND" H 9100 3950 50  0000 C CNN
+F 2 "" H 9100 4100 60  0000 C CNN
+F 3 "" H 9100 4100 60  0000 C CNN
+	1    9100 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 3800 9100 4000
+	9100 3900 9100 4100
 Wire Wire Line
 	6150 1300 6750 1300
 Wire Wire Line
@@ -1729,17 +1721,6 @@ Wire Wire Line
 	6850 5250 7200 5250
 Text Label 6950 5250 0    50   ~ 0
 nBoot
-$Comp
-L Connector_Generic:Conn_02x09_Odd_Even J1
-U 1 1 5CA34F1C
-P 9300 3400
-F 0 "J1" H 9350 4017 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 9350 3926 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x09_Pitch2.54mm" H 9300 3400 50  0001 C CNN
-F 3 "~" H 9300 3400 50  0001 C CNN
-	1    9300 3400
-	1    0    0    -1  
-$EndComp
 Text Label 6950 4250 0    50   ~ 0
 TXD0
 Text Label 6950 4350 0    50   ~ 0
@@ -1762,4 +1743,31 @@ Text Label 9750 3100 0    50   ~ 0
 RTS
 Text Label 8750 3200 0    50   ~ 0
 DTS
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J1
+U 1 1 5CA6C5F1
+P 9300 3400
+F 0 "J1" H 9350 4017 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 9350 3926 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 9300 3400 50  0001 C CNN
+F 3 "~" H 9300 3400 50  0001 C CNN
+	1    9300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3700 8750 3700
+Wire Wire Line
+	9100 3800 8750 3800
+Wire Wire Line
+	9600 3700 10000 3700
+Wire Wire Line
+	9600 3800 10000 3800
+Text Label 8750 3700 0    50   ~ 0
+CH1
+Text Label 9750 3700 0    50   ~ 0
+CH2
+Text Label 8750 3800 0    50   ~ 0
+CH3
+Text Label 9750 3800 0    50   ~ 0
+CH4
 $EndSCHEMATC
