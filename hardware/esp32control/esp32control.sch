@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:esp32control-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,12 +25,12 @@ F 3 "" H 9450 6000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R11
+L Device:R R11
 U 1 1 55A6DADB
 P 9650 6200
 F 0 "R11" V 9730 6200 50  0000 C CNN
 F 1 "100" V 9650 6200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9580 6200 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 6200 30  0001 C CNN
 F 3 "" H 9650 6200 30  0000 C CNN
 	1    9650 6200
 	-1   0    0    -1  
@@ -42,7 +41,7 @@ U 1 1 55A6DCA5
 P 9250 6150
 F 0 "C23" H 9260 6220 50  0000 L CNN
 F 1 "1u" H 9260 6070 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 9250 6150 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9250 6150 60  0001 C CNN
 F 3 "" H 9250 6150 60  0000 C CNN
 	1    9250 6150
 	1    0    0    -1  
@@ -72,12 +71,12 @@ $EndComp
 Text Label 8650 6050 0    60   ~ 0
 nReset
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R10
+L Device:R R10
 U 1 1 568D341F
 P 9100 5800
 F 0 "R10" V 9180 5800 50  0000 C CNN
 F 1 "10k" V 9100 5800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9030 5800 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 5800 30  0001 C CNN
 F 3 "" H 9100 5800 30  0000 C CNN
 	1    9100 5800
 	1    0    0    1   
@@ -99,7 +98,7 @@ U 1 1 5719E7F0
 P 10350 1550
 F 0 "D4" H 10350 1650 50  0000 C CNN
 F 1 "MBRS140" H 10350 1450 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 10350 1550 60  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 10350 1550 60  0001 C CNN
 F 3 "" H 10350 1550 60  0000 C CNN
 	1    10350 1550
 	0    1    1    0   
@@ -110,7 +109,7 @@ U 1 1 5719EC5C
 P 10500 1400
 F 0 "L9" H 10530 1440 50  0000 L CNN
 F 1 "680u" H 10530 1360 50  0000 L CNN
-F 2 "smd_packages:WE-PD-7345" H 10500 1400 60  0001 C CNN
+F 2 "Inductor_SMD:L_7.3x7.3_H4.5" H 10500 1400 60  0001 C CNN
 F 3 "" H 10500 1400 60  0000 C CNN
 F 4 "74477728" H 10500 1400 60  0001 C CNN "Wuerth"
 	1    10500 1400
@@ -122,7 +121,7 @@ U 1 1 5719EDBF
 P 10800 1500
 F 0 "C25" H 10810 1570 50  0000 L CNN
 F 1 "CP_Small" H 10810 1420 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 10800 1500 60  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 10800 1500 60  0001 C CNN
 F 3 "" H 10800 1500 60  0000 C CNN
 	1    10800 1500
 	1    0    0    -1  
@@ -177,7 +176,7 @@ U 1 1 57169594
 P 8050 1000
 F 0 "D5" H 8050 1100 50  0000 C CNN
 F 1 "MBRS140" H 8050 900 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 8050 1000 60  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 8050 1000 60  0001 C CNN
 F 3 "" H 8050 1000 60  0000 C CNN
 	1    8050 1000
 	-1   0    0    1   
@@ -199,7 +198,7 @@ U 1 1 5716B3F7
 P 8650 1100
 F 0 "C27" H 8660 1170 50  0000 L CNN
 F 1 "100n" H 8660 1020 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8650 1100 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8650 1100 60  0001 C CNN
 F 3 "" H 8650 1100 60  0000 C CNN
 	1    8650 1100
 	1    0    0    -1  
@@ -210,7 +209,7 @@ U 1 1 5717037A
 P 8300 1100
 F 0 "C28" H 8300 1250 50  0000 L CNN
 F 1 "CP_Small" H 8150 950 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D8_L11.5_P3.5" H 8300 1100 60  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 8300 1100 60  0001 C CNN
 F 3 "" H 8300 1100 60  0000 C CNN
 	1    8300 1100
 	1    0    0    -1  
@@ -221,7 +220,7 @@ U 1 1 57187742
 P 7850 1300
 F 0 "D7" H 7850 1450 50  0000 C CNN
 F 1 "TVS" H 7850 1150 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 7850 1300 60  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 7850 1300 60  0001 C CNN
 F 3 "" H 7850 1300 60  0000 C CNN
 	1    7850 1300
 	0    1    1    0   
@@ -245,7 +244,7 @@ U 1 1 5718676A
 P 10600 1500
 F 0 "C26" H 10610 1570 50  0000 L CNN
 F 1 "100n" H 10610 1420 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 10600 1500 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10600 1500 60  0001 C CNN
 F 3 "" H 10600 1500 60  0000 C CNN
 	1    10600 1500
 	1    0    0    -1  
@@ -301,23 +300,23 @@ F 3 "" H 2800 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R17
+L Device:R R17
 U 1 1 571B4108
 P 2900 4050
 F 0 "R17" V 2980 4050 50  0000 C CNN
 F 1 "10k" V 2900 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2830 4050 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4050 30  0001 C CNN
 F 3 "" H 2900 4050 30  0000 C CNN
 	1    2900 4050
 	1    0    0    1   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R30
+L Device:R R30
 U 1 1 571B4C73
 P 2900 4700
 F 0 "R30" V 2980 4700 50  0000 C CNN
 F 1 "10k" V 2900 4700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2830 4700 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 4700 30  0001 C CNN
 F 3 "" H 2900 4700 30  0000 C CNN
 	1    2900 4700
 	1    0    0    1   
@@ -435,12 +434,12 @@ F 3 "" H 10750 5850 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R23
+L Device:R R23
 U 1 1 5B7CF128
 P 10950 6050
 F 0 "R23" V 11030 6050 50  0000 C CNN
 F 1 "100" V 10950 6050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10880 6050 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10880 6050 30  0001 C CNN
 F 3 "" H 10950 6050 30  0000 C CNN
 	1    10950 6050
 	-1   0    0    -1  
@@ -459,12 +458,12 @@ $EndComp
 Text Label 9950 5900 0    60   ~ 0
 nBoot
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R22
+L Device:R R22
 U 1 1 5B7CF141
 P 10400 5650
 F 0 "R22" V 10480 5650 50  0000 C CNN
 F 1 "10k" V 10400 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10330 5650 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10330 5650 30  0001 C CNN
 F 3 "" H 10400 5650 30  0000 C CNN
 	1    10400 5650
 	1    0    0    1   
@@ -549,12 +548,12 @@ $EndComp
 Wire Wire Line
 	4500 4200 5000 4200
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R19
+L Device:R R19
 U 1 1 5B7F8F4F
 P 4700 4300
 F 0 "R19" V 4780 4300 50  0000 C CNN
 F 1 "10k" V 4700 4300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4630 4300 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 4300 30  0001 C CNN
 F 3 "" H 4700 4300 30  0000 C CNN
 	1    4700 4300
 	0    -1   1    0   
@@ -597,23 +596,23 @@ F 3 "" H 2800 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R9
+L Device:R R9
 U 1 1 5B81A88B
 P 2900 5650
 F 0 "R9" V 2980 5650 50  0000 C CNN
 F 1 "10k" V 2900 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2830 5650 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5650 30  0001 C CNN
 F 3 "" H 2900 5650 30  0000 C CNN
 	1    2900 5650
 	1    0    0    1   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R18
+L Device:R R18
 U 1 1 5B81A891
 P 2900 6300
 F 0 "R18" V 2980 6300 50  0000 C CNN
 F 1 "10k" V 2900 6300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 2830 6300 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 6300 30  0001 C CNN
 F 3 "" H 2900 6300 30  0000 C CNN
 	1    2900 6300
 	1    0    0    1   
@@ -651,45 +650,45 @@ Wire Wire Line
 	2800 5800 2900 5800
 Connection ~ 2900 5800
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R3
+L Device:R R3
 U 1 1 5B828A53
 P 1950 4200
 F 0 "R3" V 2030 4200 50  0000 C CNN
 F 1 "1k5" V 1950 4200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1880 4200 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 4200 30  0001 C CNN
 F 3 "" H 1950 4200 30  0000 C CNN
 	1    1950 4200
 	0    1    -1   0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R4
+L Device:R R4
 U 1 1 5B828C11
 P 1950 4850
 F 0 "R4" V 2030 4850 50  0000 C CNN
 F 1 "1k5" V 1950 4850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1880 4850 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 4850 30  0001 C CNN
 F 3 "" H 1950 4850 30  0000 C CNN
 	1    1950 4850
 	0    1    -1   0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R5
+L Device:R R5
 U 1 1 5B828CC1
 P 1950 5800
 F 0 "R5" V 2030 5800 50  0000 C CNN
 F 1 "1k5" V 1950 5800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1880 5800 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 5800 30  0001 C CNN
 F 3 "" H 1950 5800 30  0000 C CNN
 	1    1950 5800
 	0    1    -1   0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R8
+L Device:R R8
 U 1 1 5B828D7F
 P 1950 6450
 F 0 "R8" V 2030 6450 50  0000 C CNN
 F 1 "1k5" V 1950 6450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1880 6450 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1880 6450 30  0001 C CNN
 F 3 "" H 1950 6450 30  0000 C CNN
 	1    1950 6450
 	0    1    -1   0   
@@ -1061,7 +1060,7 @@ U 1 1 5C224D05
 P 10100 1300
 F 0 "C2" H 10110 1370 50  0000 L CNN
 F 1 "10n" H 10110 1220 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 10100 1300 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10100 1300 60  0001 C CNN
 F 3 "" H 10100 1300 60  0000 C CNN
 	1    10100 1300
 	1    0    0    -1  
@@ -1141,45 +1140,45 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 6000 7300 50  000
 	0    1    1    0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R13
+L Device:R R13
 U 1 1 5C1B1841
 P 5300 6750
 F 0 "R13" V 5380 6750 50  0000 C CNN
 F 1 "10k" V 5300 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5230 6750 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5230 6750 30  0001 C CNN
 F 3 "" H 5300 6750 30  0000 C CNN
 	1    5300 6750
 	-1   0    0    1   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R12
+L Device:R R12
 U 1 1 5C1B18D7
 P 5100 6750
 F 0 "R12" V 5180 6750 50  0000 C CNN
 F 1 "10k" V 5100 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 5030 6750 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5030 6750 30  0001 C CNN
 F 3 "" H 5100 6750 30  0000 C CNN
 	1    5100 6750
 	-1   0    0    1   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R16
+L Device:R R16
 U 1 1 5C1B1D42
 P 6450 6750
 F 0 "R16" V 6530 6750 50  0000 C CNN
 F 1 "10k" V 6450 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6380 6750 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6380 6750 30  0001 C CNN
 F 3 "" H 6450 6750 30  0000 C CNN
 	1    6450 6750
 	-1   0    0    1   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R28
+L Device:R R28
 U 1 1 5C1B1DDC
 P 6650 6750
 F 0 "R28" V 6730 6750 50  0000 C CNN
 F 1 "10k" V 6650 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6580 6750 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 6750 30  0001 C CNN
 F 3 "" H 6650 6750 30  0000 C CNN
 	1    6650 6750
 	-1   0    0    1   
@@ -1319,7 +1318,7 @@ U 1 1 5C2946EB
 P 11000 2350
 F 0 "C4" H 11010 2420 50  0000 L CNN
 F 1 "100n" H 11010 2270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 11000 2350 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 11000 2350 60  0001 C CNN
 F 3 "" H 11000 2350 60  0000 C CNN
 	1    11000 2350
 	1    0    0    -1  
@@ -1339,23 +1338,23 @@ $EndComp
 Wire Wire Line
 	11000 2550 11000 2450
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R15
+L Device:R R15
 U 1 1 5C2A8FC7
 P 6400 2000
 F 0 "R15" V 6480 2000 50  0000 C CNN
 F 1 "tbd" V 6400 2000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6330 2000 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 2000 30  0001 C CNN
 F 3 "" H 6400 2000 30  0000 C CNN
 	1    6400 2000
 	0    1    1    0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R14
+L Device:R R14
 U 1 1 5C2A904F
 P 6400 1900
 F 0 "R14" V 6480 1900 50  0000 C CNN
 F 1 "tbd" V 6400 1900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 6330 1900 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 1900 30  0001 C CNN
 F 3 "" H 6400 1900 30  0000 C CNN
 	1    6400 1900
 	0    1    1    0   
@@ -1383,7 +1382,7 @@ U 1 1 5C33837C
 P 6650 7550
 F 0 "D13" V 6604 7618 50  0000 L CNN
 F 1 "D_Zener_Small" V 6695 7618 50  0000 L CNN
-F 2 "Diodes_SMD:D_SMA" V 6650 7550 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" V 6650 7550 50  0001 C CNN
 F 3 "~" V 6650 7550 50  0001 C CNN
 	1    6650 7550
 	0    1    1    0   
@@ -1394,7 +1393,7 @@ U 1 1 5C33855F
 P 6450 7550
 F 0 "D6" V 6404 7618 50  0000 L CNN
 F 1 "D_Zener_Small" V 6495 7618 50  0000 L CNN
-F 2 "Diodes_SMD:D_SMA" V 6450 7550 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" V 6450 7550 50  0001 C CNN
 F 3 "~" V 6450 7550 50  0001 C CNN
 	1    6450 7550
 	0    1    1    0   
@@ -1425,7 +1424,7 @@ U 1 1 5C373C1B
 P 10800 2350
 F 0 "C3" H 10810 2420 50  0000 L CNN
 F 1 "4u7" H 10810 2270 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10800 2350 60  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10800 2350 60  0001 C CNN
 F 3 "" H 10800 2350 60  0000 C CNN
 	1    10800 2350
 	1    0    0    -1  
@@ -1452,18 +1451,18 @@ U 1 1 5C23F30B
 P 9400 2100
 F 0 "D14" V 9438 1983 50  0000 R CNN
 F 1 "LED" V 9347 1983 50  0000 R CNN
-F 2 "LEDs:LED_0603_HandSoldering" H 9400 2100 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 2100 50  0001 C CNN
 F 3 "~" H 9400 2100 50  0001 C CNN
 	1    9400 2100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R29
+L Device:R R29
 U 1 1 5C23F6B6
 P 9400 2400
 F 0 "R29" V 9480 2400 50  0000 C CNN
 F 1 "1k" V 9400 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9330 2400 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9330 2400 30  0001 C CNN
 F 3 "" H 9400 2400 30  0000 C CNN
 	1    9400 2400
 	-1   0    0    1   
@@ -1662,23 +1661,23 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9600 5100 50  000
 	-1   0    0    1   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R20
+L Device:R R20
 U 1 1 5C844C48
 P 10150 4500
 F 0 "R20" V 10230 4500 50  0000 C CNN
 F 1 "10k" V 10150 4500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10080 4500 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10080 4500 30  0001 C CNN
 F 3 "" H 10150 4500 30  0000 C CNN
 	1    10150 4500
 	0    1    -1   0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R21
+L Device:R R21
 U 1 1 5C844D35
 P 10150 5100
 F 0 "R21" V 10230 5100 50  0000 C CNN
 F 1 "10k" V 10150 5100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 10080 5100 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10080 5100 30  0001 C CNN
 F 3 "" H 10150 5100 30  0000 C CNN
 	1    10150 5100
 	0    1    -1   0   
@@ -1749,7 +1748,7 @@ U 1 1 5CA6C5F1
 P 9300 3400
 F 0 "J1" H 9350 4017 50  0000 C CNN
 F 1 "Conn_02x10_Odd_Even" H 9350 3926 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 9300 3400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 9300 3400 50  0001 C CNN
 F 3 "~" H 9300 3400 50  0001 C CNN
 	1    9300 3400
 	1    0    0    -1  

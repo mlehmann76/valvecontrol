@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:esp32control-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -23,7 +22,7 @@ AR Path="/5C171864/5C1D0CB5/5C1D222E" Ref="U?"  Part="1"
 AR Path="/5C1F3716/5C1D222E" Ref="U3"  Part="1" 
 AR Path="/5C1F9DEA/5C1D222E" Ref="U6"  Part="1" 
 AR Path="/5C1F9DF5/5C1D222E" Ref="U7"  Part="1" 
-F 0 "U7" H 5300 3215 50  0000 C CNN
+F 0 "U2" H 5300 3215 50  0000 C CNN
 F 1 "AQY212" H 5300 3124 50  0000 C CNN
 F 2 "Housings_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads" H 5300 3033 50  0000 C CIN
 F 3 "http://www.semicon.toshiba.co.jp/docs/datasheet/en/Opto/TLP222A_TLP222A-2_en_datasheet_071001.pdf" H 5300 3034 50  0001 C CNN
@@ -37,7 +36,7 @@ Wire Wire Line
 Text Label 5650 2700 0    60   ~ 0
 Vin
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R1
+L Device:R R1
 U 1 1 5C1D2239
 P 4750 3350
 AR Path="/5C171864/5C1D2239" Ref="R1"  Part="1" 
@@ -46,9 +45,9 @@ AR Path="/5C1F3716/5C1D2239" Ref="R6"  Part="1"
 AR Path="/5C1F9DEA/5C1D2239" Ref="R24"  Part="1" 
 AR Path="/5C1F9DF5/5C1D2239" Ref="R26"  Part="1" 
 AR Path="/5C1D2239" Ref="R26"  Part="1" 
-F 0 "R26" V 4830 3350 50  0000 C CNN
+F 0 "R1" V 4830 3350 50  0000 C CNN
 F 1 "1k" V 4750 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4680 3350 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3350 30  0001 C CNN
 F 3 "" H 4750 3350 30  0000 C CNN
 	1    4750 3350
 	1    0    0    1   
@@ -71,9 +70,9 @@ AR Path="/5C171864/5C1D2245" Ref="D2"  Part="1"
 AR Path="/5C1F3716/5C1D2245" Ref="D8"  Part="1" 
 AR Path="/5C1F9DEA/5C1D2245" Ref="D10"  Part="1" 
 AR Path="/5C1F9DF5/5C1D2245" Ref="D12"  Part="1" 
-F 0 "D12" H 6000 3350 50  0000 C CNN
+F 0 "D2" H 6000 3350 50  0000 C CNN
 F 1 "TVS" H 6000 3050 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 6000 3200 60  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 6000 3200 60  0001 C CNN
 F 3 "" H 6000 3200 60  0000 C CNN
 	1    6000 3200
 	0    1    -1   0   
@@ -94,7 +93,7 @@ AR Path="/5C171864/5C1D2251" Ref="D1"  Part="1"
 AR Path="/5C1F3716/5C1D2251" Ref="D3"  Part="1" 
 AR Path="/5C1F9DEA/5C1D2251" Ref="D9"  Part="1" 
 AR Path="/5C1F9DF5/5C1D2251" Ref="D11"  Part="1" 
-F 0 "D11" H 4500 3050 50  0000 C CNN
+F 0 "D1" H 4500 3050 50  0000 C CNN
 F 1 "LED" H 4500 2850 50  0000 C CNN
 F 2 "LEDs:LED_0603_HandSoldering" H 4500 2950 50  0001 C CNN
 F 3 "" H 4500 2950 50  0000 C CNN
@@ -102,7 +101,7 @@ F 3 "" H 4500 2950 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L esp32control-rescue:R-device-esp32ValveControl-rescue R?
+L Device:R R?
 U 1 1 5C1D225F
 P 4500 3350
 AR Path="/5C1D225F" Ref="R?"  Part="1" 
@@ -110,9 +109,9 @@ AR Path="/5C171864/5C1D225F" Ref="R2"  Part="1"
 AR Path="/5C1F3716/5C1D225F" Ref="R7"  Part="1" 
 AR Path="/5C1F9DEA/5C1D225F" Ref="R25"  Part="1" 
 AR Path="/5C1F9DF5/5C1D225F" Ref="R27"  Part="1" 
-F 0 "R27" V 4580 3350 50  0000 C CNN
+F 0 "R2" V 4580 3350 50  0000 C CNN
 F 1 "1k" V 4500 3350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 4430 3350 30  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 3350 30  0001 C CNN
 F 3 "" H 4500 3350 30  0000 C CNN
 	1    4500 3350
 	1    0    0    -1  
@@ -138,7 +137,7 @@ AR Path="/5C171864/5C1D2258" Ref="Q1"  Part="1"
 AR Path="/5C1F3716/5C1D2258" Ref="Q2"  Part="1" 
 AR Path="/5C1F9DEA/5C1D2258" Ref="Q3"  Part="1" 
 AR Path="/5C1F9DF5/5C1D2258" Ref="Q4"  Part="1" 
-F 0 "Q4" H 4500 3551 40  0000 R CNN
+F 0 "Q1" H 4500 3551 40  0000 R CNN
 F 1 "BSS138" H 4500 3850 40  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4370 3802 29  0000 C CNN
 F 3 "" H 4500 3700 60  0000 C CNN
