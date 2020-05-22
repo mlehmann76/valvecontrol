@@ -5,9 +5,9 @@
     {
       "Vendor":      "KiCad",
       "Application": "Pcbnew",
-      "Version":     "5.1.5-5.1.5"
+      "Version":     "(5.1.6-dirty)"
     },
-    "CreationDate":  "2020-03-30T20:46:45+02:00"
+    "CreationDate":  "2020-05-22T11:22:20+02:00"
   },
   "GeneralSpecs":
   {
