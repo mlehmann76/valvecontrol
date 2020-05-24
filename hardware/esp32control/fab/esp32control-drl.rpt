@@ -1,5 +1,5 @@
 Drill report for /home/marco/git/valvecontrol/hardware/esp32control/esp32control.kicad_pcb
-Created on Sa 23 Mai 2020 11:02:45 CEST
+Created on So 24 Mai 2020 16:44:50 CEST
 
 Copper Layer Stackup:
     =============================================================
@@ -10,13 +10,13 @@ Copper Layer Stackup:
 Drill file 'esp32control-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0,40mm  0,016"  (111 holes)
+    T1  0,40mm  0,016"  (138 holes)
     T2  0,80mm  0,031"  (2 holes)
     T3  1,00mm  0,039"  (44 holes)
     T4  1,90mm  0,075"  (2 holes)
     T5  3,00mm  0,118"  (2 holes)
 
-    Total plated holes count 161
+    Total plated holes count 188
 
 
 Drill file 'esp32control-NPTH.drl' contains
