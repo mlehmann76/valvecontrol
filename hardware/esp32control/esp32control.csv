@@ -1,25 +1,36 @@
-ID,Bezeichner,Gehäuse,Stückzahl,Bezeichnung,Anbieter und Referenz
-1,"U8,U5,U9,U10",SO-4_4.4x3.6mm_Pitch2.54mm,4,LTV-354T,
-2,U11,CB_HUT_4,1,HUT4,
-3,J1,Pin_Header_Straight_2x07_Pitch2.54mm,1,Conn_02x07_Odd_Even,
-4,"D14,D3,D1,D9,D11",LED_0603_HandSoldering,5,LED,
-5,"R29,R24,R25,R27,R26,R1,R7,R6,R2",R_0603,9,1k,
-6,"D13,D6",D_SMA,2,D_Zener_Small,
-7,"C4,C1,C26,C27,C23",C_0603,5,100n,
-8,C3,C_0805_HandSoldering,1,4u7,
-9,U12,SOT-223-3_TabPin2,1,LM1117-3.3,
-10,"Q6,Q5,Q1,Q2,Q3,Q4",SOT-23,6,BSS138,
-11,"R12,R13,R28,R19,R18,R8,R9,R22,R30,R17,R16,R10,R5,R4,R3",R_0603,15,10k,
-12,"R14,R15",R_0603,2,tbd,
-13,U4,SOIC-8_3.9x4.9mm_Pitch1.27mm,1,LM2675M-5,
-14,C2,C_0603,1,10n,
-15,"D7,D2,D8,D10,D12",D_SMA,5,TVS,
-16,"D5,D4",D_SMA,2,MBRS140,
-17,"R23,R11",R_0603,2,100,
-18,P1,Pin_Header_Straight_1x05_Pitch2.54mm,1,CONN_01X05,
-19,SW1,SMD_Switch_6.5x6,1,Boot,
-20,"C25,C28",C_Radial_D8_L11.5_P3.5,2,CP_Small,
-21,L9,WE-PD-7345,1,680u,
-22,SW2,SMD_Switch_6.5x6,1,Reset,
-23,U1,ESP32-WROOM,1,ESP32-WROOM,
-24,"U7,U6,U2,U3",DIP-4_W7.62mm_SMDSocket_SmallPads,4,AQY212,
+"Source:","/home/marco/git/valvecontrol/hardware/esp32control/esp32control.sch"
+"Date:","Fr 05 Jun 2020 20:17:23 CEST"
+"Tool:","Eeschema (5.1.6-dirty)"
+"Generator:","/tmp/.mount_KiCad-oYmHBl/usr/share/kicad/plugins/bom_csv_grouped_by_value_with_fp.py"
+"Component Count:","86"
+"Ref","Qnty","Value","Cmp name","Footprint","Description","Vendor"
+"BT1, ","1","Battery_Cell","Battery_Cell","Battery:BatteryHolder_Keystone_3001_1x12mm","Single-cell battery",""
+"C1, C23, ","2","1u","C_Small-device-esp32ValveControl-rescue","Capacitor_SMD:C_0603_1608Metric","",""
+"C2, ","1","10n","C_Small-device-esp32ValveControl-rescue","Capacitor_SMD:C_0603_1608Metric","",""
+"C3, ","1","4u7","C_Small-device-esp32ValveControl-rescue","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","",""
+"C4, C26, C27, ","3","100n","C_Small-device-esp32ValveControl-rescue","Capacitor_SMD:C_0603_1608Metric","",""
+"C5, C6, ","2","47u 10V","C_Small","Capacitor_SMD:C_1206_3216Metric","Unpolarized capacitor, small symbol",""
+"C28, ","1","100u 50V","CP_Small-device-esp32ValveControl-rescue","Capacitor_THT:CP_Radial_D8.0mm_P3.50mm","",""
+"D1, D3, D9, D11, ","4","LED","LED-device-esp32ValveControl-rescue","LEDs:LED_0603_HandSoldering","",""
+"D2, D7, D8, D10, D12, ","5","SMAJ26CAQ","TVS-device-esp32ValveControl-rescue","Diode_SMD:D_SMA","",""
+"D4, D5, ","2","MBRS140","D_Schottky-device-esp32ValveControl-rescue","Diode_SMD:D_SMA","",""
+"D6, D13, ","2","SMAZ7V5","D_Zener_Small","Diode_SMD:D_SMA","Zener diode, small symbol",""
+"D14, D15, D16, ","3","LED","LED","LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder","Light emitting diode",""
+"J1, ","1","Conn_02x10_Odd_Even","Conn_02x10_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical","Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",""
+"L9, ","1","680u","L_Small-device-esp32ValveControl-rescue","Inductor_SMD:L_7.3x7.3_H4.5","",""
+"Q1, Q2, Q3, Q4, Q5, Q6, ","6","BSS138","BSS138","Package_TO_SOT_SMD:SOT-23","50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23",""
+"Q7, Q8, ","2","MMBT3904","MMBT3904","Package_TO_SOT_SMD:SOT-23","0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23",""
+"R1, R2, R6, R7, R24, R25, R26, R27, R29, R32, R33, ","11","1k","R","Resistor_SMD:R_0603_1608Metric","Resistor",""
+"R3, R4, R5, R8, ","4","1k5","R","Resistor_SMD:R_0603_1608Metric","Resistor",""
+"R9, R10, R12, R13, R16, R17, R18, R19, R20, R21, R22, R28, R30, ","13","10k","R","Resistor_SMD:R_0603_1608Metric","Resistor",""
+"R11, R14, R15, R23, R31, ","5","100","R","Resistor_SMD:R_0603_1608Metric","Resistor",""
+"SW1, ","1","Boot","Switch_4P","switches:SMD_Switch_6.5x6","",""
+"SW2, ","1","Reset","Switch_4P","switches:SMD_Switch_6.5x6","",""
+"TP1, ","1","TestPoint","TestPoint","TestPoint:TestPoint_Pad_D1.5mm","test point",""
+"U1, ","1","ESP32-WROOM","ESP32-WROOM","ESP32-footprints-Lib:ESP32-WROOM","",""
+"U2, U3, U6, U7, ","4","AQY212","AQY212","Housings_DIP:DIP-4_W7.62mm_SMDSocket_SmallPads","DIP4, MOSFET Photorelay 1-Form-A, Voff 60V, Ion 0,5A",""
+"U4, ","1","LM2675M-5","LM2675M-5","SOIC_Packages:SOIC-8_3.9x4.9mm_Pitch1.27mm","5V, 1A Step-Down Voltage Regulator, SO-8",""
+"U5, U8, U9, U10, ","4","LTV-354T","LTV-354T","SOIC_Packages:SO-4_4.4x3.6mm_Pitch2.54mm","AC/DC Optocoupler, Vce 35V, CTR 20%, SO-4",""
+"U11, ","1","HUT4","HUT4","cb_hut:CB_HUT_4","",""
+"U12, ","1","LM1117-3.3","LM1117-3.3","Package_TO_SOT_SMD:SOT-223-3_TabPin2","800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223",""
+"U13, ","1","RV-8523-C3","RV-8523-C3","Package_SON:RTC_SMD_MicroCrystal_C3_2.5x3.7mm","Realtime Clock/Calendar I2C Interface, Low Power, 1.2 V to 5.5 V, MicroCrystal C3",""
