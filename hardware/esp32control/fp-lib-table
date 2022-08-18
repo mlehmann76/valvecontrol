@@ -10,4 +10,5 @@
   (lib (name cb_hut)(type KiCad)(uri ${KICAD_USER_LIBS}/footprints/cb_hut.pretty)(options "")(descr ""))
   (lib (name ESP32-footprints-Lib)(type KiCad)(uri /home/marco/git/kicad-lib/footprints/ESP32-footprints-Lib.pretty)(options "")(descr ""))
   (lib (name Package_TO_SOT_SMD)(type KiCad)(uri /home/marco/kicad/libs/Package_TO_SOT_SMD.pretty)(options "")(descr ""))
+  (lib (name Package_Powerflat)(type KiCad)(uri ${KICAD_USER_LIBS}/footprints/Package_Powerflat.pretty)(options "")(descr ""))
 )

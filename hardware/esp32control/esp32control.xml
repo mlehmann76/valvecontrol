@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/marco/git/valvecontrol/hardware/esp32control/esp32control.sch</source>
-    <date>Fr 05 Jun 2020 20:17:23 CEST</date>
+    <date>Sa 06 Jun 2020 23:11:25 CEST</date>
     <tool>Eeschema (5.1.6-dirty)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -89,8 +89,11 @@
       <tstamp>55A6DADB</tstamp>
     </comp>
     <comp ref="C23">
-      <value>1u</value>
+      <value>1u 10V</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Mouser"> 963-LMK107B7105KA-T </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="C_Small-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55A6DCA5</tstamp>
@@ -105,6 +108,9 @@
     <comp ref="D4">
       <value>MBRS140</value>
       <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="Mouser"> 863-MBRS140T3G </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="D_Schottky-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5719E7F0</tstamp>
@@ -113,6 +119,7 @@
       <value>680u</value>
       <footprint>Inductor_SMD:L_7.3x7.3_H4.5</footprint>
       <fields>
+        <field name="Mouser"> 710-74477728 </field>
         <field name="Wuerth">74477728</field>
       </fields>
       <libsource lib="esp32control-rescue" part="L_Small-device-esp32ValveControl-rescue" description=""/>
@@ -122,13 +129,19 @@
     <comp ref="D5">
       <value>MBRS140</value>
       <footprint>Diode_SMD:D_SMA</footprint>
+      <fields>
+        <field name="Mouser"> 863-MBRS140T3G </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="D_Schottky-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57169594</tstamp>
     </comp>
     <comp ref="C27">
-      <value>100n</value>
+      <value>100n 50V</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Mouser"> 80-C0603C104M5R </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="C_Small-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5716B3F7</tstamp>
@@ -154,8 +167,11 @@
       <tstamp>57187742</tstamp>
     </comp>
     <comp ref="C26">
-      <value>100n</value>
+      <value>100n 50V</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Mouser"> 80-C0603C104M5R </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="C_Small-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5718676A</tstamp>
@@ -177,6 +193,9 @@
     <comp ref="U1">
       <value>ESP32-WROOM</value>
       <footprint>ESP32-footprints-Lib:ESP32-WROOM</footprint>
+      <fields>
+        <field name="Mouser"> 356-ESP32WRM32UE28UH </field>
+      </fields>
       <libsource lib="ESP32-footprints-Shem-Lib" part="ESP32-WROOM" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5AF74CA0</tstamp>
@@ -316,6 +335,9 @@
       <value>BSS138</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="Mouser"> 771-BSS138P215 </field>
+      </fields>
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1B1524</tstamp>
@@ -324,6 +346,9 @@
       <value>BSS138</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</datasheet>
+      <fields>
+        <field name="Mouser"> 771-BSS138P215 </field>
+      </fields>
       <libsource lib="Transistor_FET" part="BSS138" description="50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1B1791</tstamp>
@@ -371,13 +396,19 @@
       <value>LM1117-3.3</value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/lm1117.pdf</datasheet>
+      <fields>
+        <field name="Mouser"> 926-LM1117MP-3.3NOPB </field>
+      </fields>
       <libsource lib="Regulator_Linear" part="LM1117-3.3" description="800mA Low-Dropout Linear Regulator, 3.3V fixed output, TO-220/TO-252/TO-263/SOT-223"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C1F89E3</tstamp>
     </comp>
     <comp ref="C4">
-      <value>100n</value>
+      <value>100n 50V</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Mouser"> 80-C0603C104M5R </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="C_Small-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C2946EB</tstamp>
@@ -419,16 +450,22 @@
       <tstamp>5C33855F</tstamp>
     </comp>
     <comp ref="C3">
-      <value>4u7</value>
+      <value>4u7 16V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Mouser"> 710-885012107013 </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="C_Small-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C373C1B</tstamp>
     </comp>
     <comp ref="D14">
-      <value>LED</value>
+      <value>red</value>
       <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser"> 710-150060RS75000 </field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C23F30B</tstamp>
@@ -444,6 +481,9 @@
       <value>MMBT3904</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <fields>
+        <field name="Mouser"> 771-MMBT3904VL </field>
+      </fields>
       <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C801DA6</tstamp>
@@ -452,6 +492,9 @@
       <value>MMBT3904</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
+      <fields>
+        <field name="Mouser"> 771-MMBT3904VL </field>
+      </fields>
       <libsource lib="Transistor_BJT" part="MMBT3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C82A159</tstamp>
@@ -508,8 +551,11 @@
       <tstamp>5EE21639</tstamp>
     </comp>
     <comp ref="C1">
-      <value>1u</value>
+      <value>1u 10V</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Mouser"> 963-LMK107B7105KA-T </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="C_Small-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5EE6AEE9</tstamp>
@@ -523,9 +569,12 @@
       <tstamp>5EFF2915</tstamp>
     </comp>
     <comp ref="D15">
-      <value>LED</value>
+      <value>green</value>
       <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser"> 710-150060GS75000 </field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F05A340</tstamp>
@@ -538,9 +587,12 @@
       <tstamp>5F05A346</tstamp>
     </comp>
     <comp ref="D16">
-      <value>LED</value>
+      <value>yellow</value>
       <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser"> 710-150060YS75000 </field>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F069501</tstamp>
@@ -556,6 +608,9 @@
       <value>47u 10V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser"> 963-LMK316BC6476ML-T </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F179849</tstamp>
@@ -564,6 +619,9 @@
       <value>47u 10V</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Mouser"> 963-LMK316BC6476ML-T </field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F17AB89</tstamp>
@@ -597,8 +655,11 @@
       <tstamp>5C1D2245</tstamp>
     </comp>
     <comp ref="D1">
-      <value>LED</value>
+      <value>yellow</value>
       <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <fields>
+        <field name="Mouser"> 710-150060YS75000 </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="LED-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/dig_output/" tstamps="/5C171864/"/>
       <tstamp>5C1D2251</tstamp>
@@ -613,6 +674,9 @@
     <comp ref="Q1">
       <value>BSS138</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Mouser"> 771-BSS138P215 </field>
+      </fields>
       <libsource lib="transistors" part="BSS138" description="BSS138, 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/dig_output/" tstamps="/5C171864/"/>
       <tstamp>5C1D2258</tstamp>
@@ -646,8 +710,11 @@
       <tstamp>5C1D2245</tstamp>
     </comp>
     <comp ref="D3">
-      <value>LED</value>
+      <value>yellow</value>
       <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <fields>
+        <field name="Mouser"> 710-150060YS75000 </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="LED-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/sheet5C1F370F/" tstamps="/5C1F3716/"/>
       <tstamp>5C1D2251</tstamp>
@@ -662,6 +729,9 @@
     <comp ref="Q2">
       <value>BSS138</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Mouser"> 771-BSS138P215 </field>
+      </fields>
       <libsource lib="transistors" part="BSS138" description="BSS138, 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/sheet5C1F370F/" tstamps="/5C1F3716/"/>
       <tstamp>5C1D2258</tstamp>
@@ -695,8 +765,11 @@
       <tstamp>5C1D2245</tstamp>
     </comp>
     <comp ref="D9">
-      <value>LED</value>
+      <value>yellow</value>
       <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <fields>
+        <field name="Mouser"> 710-150060YS75000 </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="LED-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/sheet5C1F9DE2/" tstamps="/5C1F9DEA/"/>
       <tstamp>5C1D2251</tstamp>
@@ -711,6 +784,9 @@
     <comp ref="Q3">
       <value>BSS138</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Mouser"> 771-BSS138P215 </field>
+      </fields>
       <libsource lib="transistors" part="BSS138" description="BSS138, 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/sheet5C1F9DE2/" tstamps="/5C1F9DEA/"/>
       <tstamp>5C1D2258</tstamp>
@@ -744,8 +820,11 @@
       <tstamp>5C1D2245</tstamp>
     </comp>
     <comp ref="D11">
-      <value>LED</value>
+      <value>yellow</value>
       <footprint>LEDs:LED_0603_HandSoldering</footprint>
+      <fields>
+        <field name="Mouser"> 710-150060YS75000 </field>
+      </fields>
       <libsource lib="esp32control-rescue" part="LED-device-esp32ValveControl-rescue" description=""/>
       <sheetpath names="/sheet5C1F9DE3/" tstamps="/5C1F9DF5/"/>
       <tstamp>5C1D2251</tstamp>
@@ -760,6 +839,9 @@
     <comp ref="Q4">
       <value>BSS138</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <fields>
+        <field name="Mouser"> 771-BSS138P215 </field>
+      </fields>
       <libsource lib="transistors" part="BSS138" description="BSS138, 50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"/>
       <sheetpath names="/sheet5C1F9DE3/" tstamps="/5C1F9DF5/"/>
       <tstamp>5C1D2258</tstamp>

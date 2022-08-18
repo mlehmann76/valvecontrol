@@ -14,4 +14,5 @@
   (lib (name oled_096_27pin)(type Legacy)(uri ${KICAD_USER_LIBS}/components/oled_096_27pin.lib)(options "")(descr ""))
   (lib (name aqy212)(type Legacy)(uri ${KIPRJMOD}/lib/aqy212.lib)(options "")(descr ""))
   (lib (name esp32control-rescue)(type Legacy)(uri ${KIPRJMOD}/esp32control-rescue.lib)(options "")(descr ""))
+  (lib (name Regulator)(type Legacy)(uri ${KICAD_USER_LIBS}/components/Regulator.lib)(options "")(descr ""))
 )
