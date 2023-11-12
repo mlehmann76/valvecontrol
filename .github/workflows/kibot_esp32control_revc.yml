@@ -1,4 +1,4 @@
-name: SolderStation
+name: revc
 
 on:
   push:
