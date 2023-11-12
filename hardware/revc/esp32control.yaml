@@ -1,0 +1,289 @@
+kibot:
+  version: 1
+
+global:
+  filters:
+  - number: 1007
+  - number: 1015
+  - number: 58
+
+filters:
+- name: only_jlc_parts
+  comment: Only parts with JLC code
+  type: generic
+  include_only:
+  - column: JLCPCB#
+    regex: ^C\d+
+
+preflight:
+  check_zone_fills: true
+  run_erc: true
+  run_drc: true
+  update_xml: true
+  filters:
+    - filter: 'overlapping courtyards'
+      error: 'courtyards_overlap'
+      regex: 'Courtyards overlap'
+    - filter: 'Silkscreen overlap'
+      error: 'silk_overlap'
+      regex: 'Silkscreen overlap'
+    - filter: 'pin to pin'
+      error: 'pin_to_pin'
+      regex: 'Pins of type Output and Output are connected'
+    - filter: 'power_pin_not_driven'
+      error: 'power_pin_not_driven'
+      regex: 'Input Power pin not driven by any Output Power pins'
+  set_text_variables:
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
+      before: 'Git:'
+
+variants:
+- name: default
+  comment: four channel placement
+  type: kibom
+- name: minimal
+  comment: 'minimal version with only channel 0/1'
+  type: kibom
+  file_id: _minimal
+  variant: minimal
+  
+outputs:
+- name: JLCPCB_gerbers
+  comment: Gerbers compatible with JLCPCB
+  type: gerber
+  dir: Manufacturers/JLCPCB
+  options:
+    exclude_edge_layer: true
+    exclude_pads_from_silkscreen: true
+    plot_sheet_reference: false
+    plot_footprint_refs: true
+    plot_footprint_values: false
+    force_plot_invisible_refs_vals: false
+    tent_vias: true
+    use_protel_extensions: true
+    create_gerber_job_file: false
+    disable_aperture_macros: true
+    gerber_precision: 4.6
+    use_gerber_x2_attributes: false
+    use_gerber_net_attributes: false
+    line_width: 0.1
+    subtract_mask_from_silk: true
+    inner_extension_pattern: .g%n
+  layers: &id002
+  - layer: F.Cu
+    suffix: F_Cu
+    description: Front copper
+  - layer: In1.Cu
+    suffix: In1_Cu
+    description: Inner layer 1
+  - layer: In2.Cu
+    suffix: In2_Cu
+    description: Inner layer 2
+  - layer: B.Cu
+    suffix: B_Cu
+    description: Bottom copper
+  - layer: B.Paste
+    suffix: B_Paste
+    description: Bottom solder paste
+  - layer: F.Paste
+    suffix: F_Paste
+    description: Front solder paste
+  - layer: B.Silkscreen
+    suffix: B_Silkscreen
+    description: Bottom silkscreen (artwork)
+  - layer: F.Silkscreen
+    suffix: F_Silkscreen
+    description: Front silkscreen (artwork)
+  - layer: B.Mask
+    suffix: B_Mask
+    description: Bottom soldermask (negative)
+  - layer: F.Mask
+    suffix: F_Mask
+    description: Front soldermask (negative)
+  - layer: Edge.Cuts
+    suffix: Edge_Cuts
+    description: Board shape
+- name: JLCPCB_drill
+  comment: Drill files compatible with JLCPCB
+  type: excellon
+  dir: Manufacturers/JLCPCB
+  options:
+    pth_and_npth_single_file: false
+    pth_id: -PTH
+    npth_id: -NPTH
+    metric_units: true
+    map: gerber
+    route_mode_for_oval_holes: false
+    output: '%f%i.%x'
+- name: JLCPCB_position
+  comment: Pick and place file, JLCPCB style
+  type: position
+  dir: Manufacturers/JLCPCB
+  options:
+    variant: default
+    output: '%f_cpl_jlc.%x'
+    format: CSV
+    units: millimeters
+    separate_files_for_front_and_back: false
+    only_smd: true
+    columns:
+    - id: Ref
+      name: Designator
+    - Val
+    - Package
+    - id: PosX
+      name: Mid X
+    - id: PosY
+      name: Mid Y
+    - id: Rot
+      name: Rotation
+    - id: Side
+      name: Layer
+- name: JLCPCB_bom
+  comment: BoM for JLCPCB
+  type: bom
+  dir: Manufacturers/JLCPCB
+  options:
+    output: '%f_%i_jlc.%x'
+    exclude_filter: only_jlc_parts
+    ref_separator: ','
+    columns:
+    - field: Value
+      name: Comment
+    - field: References
+      name: Designator
+    - Footprint
+    - field: JLCPCB#
+      name: 'JLCPCB Part #'
+    csv:
+      hide_pcb_info: true
+      hide_stats_info: true
+      quote_all: true
+- name: JLCPCB
+  comment: ZIP file for JLCPCB
+  type: compress
+  dir: Manufacturers
+  options:
+    files:
+    - from_output: JLCPCB_gerbers
+      dest: /
+    - from_output: JLCPCB_drill
+      dest: /
+    - from_output: JLCPCB_position
+      dest: /
+    - from_output: JLCPCB_bom
+      dest: /
+- name: basic_ibom
+  comment: Interactive HTML BoM
+  type: ibom
+  dir: Assembly
+- name: basic_info
+  comment: Information about the run
+  type: info
+  dir: .
+- name: basic_pcbdraw_png_jlcpcb_green_enig_top
+  comment: PCB 2D render in PNG format, using jlcpcb-green-enig style
+  type: pcbdraw
+  dir: PCB/2D_render/jlcpcb_green_enig
+  options:
+    style: jlcpcb-green-enig
+    format: png
+- name: basic_pcbdraw_png_jlcpcb_green_enig_bottom
+  comment: PCB 2D render in PNG format, using jlcpcb-green-enig style
+  type: pcbdraw
+  dir: PCB/2D_render/jlcpcb_green_enig
+  options:
+    style: jlcpcb-green-enig
+    format: png
+    bottom: true
+- name: basic_render_3d_top
+  comment: 3D view from top
+  type: render_3d
+  dir: 3D
+  options:
+    ray_tracing: true
+    orthographic: true
+- name: basic_render_3d_30deg
+  comment: 3D view from 30 degrees
+  type: render_3d
+  dir: 3D
+  output_id: 30deg
+  options:
+    ray_tracing: true
+    rotate_x: 3
+    rotate_z: -2
+    view: bottom
+- name: basic_render_3d_bottom
+  comment: 3D view from bottom
+  type: render_3d
+  dir: 3D
+  options:
+    ray_tracing: true
+    orthographic: true
+    view: bottom
+- name: report_full
+  comment: Full design report
+  type: report
+  options:
+    template: full_SVG
+- name: basic_step
+  comment: 3D model in STEP format
+  type: step
+  dir: 3D
+- name: 'print_sch'
+  comment: "Schematic PDF"
+  type: pdf_sch_print
+  dir: Schematic
+- name: 'print_pcb'
+  comment: "PCB Print"
+  type: pcb_print
+  dir: PCB/pdf
+  options: 
+    format: 'PDF'
+    pages:
+      - sheet: 'Drawings'
+        layers:
+          - layer: User.Drawings
+          - layer: User.Comments
+          - layer: F.Fab
+            plot_footprint_refs: true
+            plot_footprint_values: false
+          - layer: Edge.Cuts
+      - sheet: 'Assembly Top Layer'
+        monochrome : true
+        layers:
+          - layer: F.Fab
+            plot_footprint_refs: true
+            plot_footprint_values: true
+          - layer: Edge.Cuts
+      - sheet: 'Assembly Bottom Layer'
+        monochrome : true
+        mirror: true
+        layers:
+          - layer: B.Fab
+            plot_footprint_refs: true
+            plot_footprint_values: true
+          - layer: Edge.Cuts
+      - sheet: 'Top Copper'
+        monochrome : true
+        layers:
+          - layer: F.Cu
+          - layer: Edge.Cuts
+      - sheet: 'Inner1 Copper'
+        monochrome : true
+        layers:
+          - layer: In1.Cu
+          - layer: Edge.Cuts
+      - sheet: 'Inner2 Copper'
+        monochrome : true
+        layers:
+          - layer: In2.Cu
+          - layer: Edge.Cuts
+      - sheet: 'Bottom Copper'
+        monochrome : true
+        mirror: true
+        layers:
+          - layer: B.Cu
+          - layer: Edge.Cuts
+
