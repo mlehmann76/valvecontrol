@@ -3737,7 +3737,7 @@
     (property "Value" "ESP32-WROOM" (at 149.86 106.68 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "ESP32-footprints-Lib:ESP32-WROOM" (at 146.05 104.14 0)
+    (property "Footprint" "RF_Module:ESP32-WROOM-32U" (at 146.05 104.14 0)
       (effects (font (size 1.524 1.524)) hide)
     )
     (property "Datasheet" "" (at 125.73 127 0)
