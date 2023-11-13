@@ -33,6 +33,12 @@ preflight:
     - filter: 'power_pin_not_driven'
       error: 'power_pin_not_driven'
       regex: 'Input Power pin not driven by any Output Power pins'
+    - filter: 'lib_footprint_issues'
+      error: 'lib_footprint_issues'
+      regex: 'not found in library'
+    - filter: 'lib_footprint_mismatch'
+      error: 'lib_footprint_mismatch'
+      regex: 'does not match copy in library'
   set_text_variables:
     - name: 'git_hash'
       command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
