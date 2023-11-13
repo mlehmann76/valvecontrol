@@ -42,11 +42,6 @@ variants:
 - name: default
   comment: four channel placement
   type: kibom
-- name: minimal
-  comment: 'minimal version with only channel 0/1'
-  type: kibom
-  file_id: _minimal
-  variant: minimal
   
 outputs:
 - name: JLCPCB_gerbers
@@ -74,8 +69,8 @@ outputs:
   - layer: F.Cu
     suffix: F_Cu
     description: Front copper
-  - layer: In1.Cu
-    suffix: In1_Cu
+  - layer: B.Cu
+    suffix: B_Cu
     description: Bottom copper
   - layer: B.Paste
     suffix: B_Paste
