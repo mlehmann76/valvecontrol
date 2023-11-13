@@ -265,16 +265,6 @@ outputs:
         layers:
           - layer: F.Cu
           - layer: Edge.Cuts
-      - sheet: 'Inner1 Copper'
-        monochrome : true
-        layers:
-          - layer: In1.Cu
-          - layer: Edge.Cuts
-      - sheet: 'Inner2 Copper'
-        monochrome : true
-        layers:
-          - layer: In2.Cu
-          - layer: Edge.Cuts
       - sheet: 'Bottom Copper'
         monochrome : true
         mirror: true
