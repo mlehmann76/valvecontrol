@@ -518,7 +518,7 @@
             (xy -1.27 0)
             (xy 1.27 -1.27)
           )
-          (stroke (width 0) (type default))
+          (stroke (width 0) (type solid))
           (fill (type outline))
         )
         (polyline
@@ -530,7 +530,7 @@
             (xy -0.635 -1.27)
             (xy -0.635 -0.635)
           )
-          (stroke (width 0.2032) (type default))
+          (stroke (width 0.2032) (type solid))
           (fill (type none))
         )
       )
