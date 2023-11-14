@@ -49,7 +49,7 @@ jobs:
         board: 'hardware/revc/esp32control.kicad_pcb'
         skip: run_erc
         targets: __NONE__
-        verbose: 1
+        verbose: 0
 
     - name: Retrieve results
       uses: actions/upload-artifact@v3
